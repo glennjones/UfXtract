@@ -1,4 +1,4 @@
-<img src="http://www.ufxtract.com/images/ufxtract-logo.gif"> UfXtract  
+<img src="http://www.ufxtract.com/images/ufxtract-logo.gif"> 
 ============================
 
 
