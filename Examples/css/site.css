@@ -1,0 +1,312 @@
+﻿body
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 0.8em;
+    padding: 2em;
+}
+
+h1
+{
+   font-size: 1.5em;
+   font-weight: bold; 
+}
+
+h2
+{
+   font-size: 1.3em;
+   font-weight: bold; 
+}
+
+h3
+{
+   font-size: 1.0em;
+   font-weight: bold; 
+}
+
+.container
+{
+	clear:left;
+	overflow:hidden;
+}
+
+.column1
+{
+	border-right:1px dotted #D2D2D2;
+	float:left;
+	height:auto !important;
+	min-height:40em;
+	padding:0 60px 20px 0;
+	position:relative;
+	width:630px;
+	padding-bottom: 8em;
+}
+
+.column2
+{
+	padding-left:730px;
+	
+}
+
+#testsuite-image
+{
+    margin: 0 0 2em 0;
+}
+
+.test-fixture table
+{
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.test-fixture th
+{
+    text-align: left;
+    padding: 0.3em;
+    background-color: #000;
+    color: #fff;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.test-fixture td
+{
+    padding: 0.3em;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#uf
+{
+    display: block;
+    margin: 4em 0 4em 0;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 2em;
+}
+
+.documentation
+{
+  margin-left: 4em;  
+}
+
+.documentation h2
+{
+    margin: 3em 0 0 0;
+}
+
+.documentation pre
+{
+  margin: 2em 0 2em 0;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 1em;
+  font-size: 1.2em; 
+  padding:10px;
+  overflow-x:scroll; 
+}
+
+textarea, input, select
+{
+	font-size: 1em;
+	font-family: arial, helvetica, sans-serif;	
+}
+
+form p
+{
+	clear: both;
+	margin: 0em 0em 0.5em 0em;
+}
+
+form
+{
+	margin-top: 2em;
+}
+
+form label
+{
+	float: left;
+	width: 8em;
+	text-align: right;
+	margin-right: 0.5em;	
+}
+
+form .fields
+{
+	width: 10em;
+}
+
+form textarea
+{
+	width: 26em;
+}
+
+form .button
+{
+	margin-left: 8em;
+	display:block;
+}
+
+body.ufxtract  h1 span, body.ufxtract h2.strap span
+{
+    display: none;
+}
+
+body.ufxtract h1 {
+    background-image:url(/images/ufxtract-logo.gif);
+    background-repeat:no-repeat;
+    height:31px;
+    width:156px;
+}
+
+body.ufxtract  h2.strap {
+    background-image:url(/images/ufxtract-strap.gif);
+    background-repeat:no-repeat;
+    height:22px;
+    width:439px;
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+h2.frist-item, p.frist-item 
+{
+	margin-top: 0;
+}
+
+
+.largefields
+{
+	width: 30em;
+}
+
+.submitbutton
+{
+	margin-left: 8.5em;
+}
+
+.column1
+{
+	width: 50em;
+}
+
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: Consolas, "Courier New", Courier, Monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+
+.csharpcode pre { margin: 0; }
+
+.csharpcode .rem { color: #008000; }
+
+.csharpcode .kwrd { color: #0000ff; }
+
+.csharpcode .str { color: #006080; }
+
+.csharpcode .op { color: #0000c0; }
+
+.csharpcode .preproc { color: #cc6633; }
+
+.csharpcode .asp { background-color: #ffff00; }
+
+.csharpcode .html { color: #800000; }
+
+.csharpcode .attr { color: #ff0000; }
+
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+
+.csharpcode .lnum { color: #606060; }
+
+.try-button
+{
+	font-weight: bold;
+}
+
+.copyright
+{
+	color: #999;
+}
+
+.copyright a
+{
+	color: #999;
+	text-decoration: none;	
+}
+
+.copyright a:hover
+{
+	color: #999;
+	text-decoration: underline;	
+}
+
+.column2 h2
+{
+    font-size: 1em;	
+    margin-top: 1em;
+    margin-left: 0.6em;
+}
+
+.column2 ul {
+	margin: 0.4em 0 0 0.6em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.column2 li {
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+
+.column2 li a {
+	font-weight: normal;
+	
+	color: #000;
+	text-decoration: none;
+}
+
+.column2 li a:hover {
+	text-decoration: underline;
+}
+
+a.download-link
+{
+	color: #000;
+	display: block;
+	text-decoration: none;
+	padding-top: 1em;
+}
+
+a.license
+{
+	display: block;
+	text-decoration: none;
+	color: #ccc;
+	padding-bottom: 0.4em;
+	border-bottom:1px dotted #D2D2D2;
+	width: 15em;
+}
+
+a.home-link
+{
+	color: #000;
+	display: block;
+	text-decoration: none;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	border-bottom:1px dotted #D2D2D2;
+	width: 15em;
+}
+
+a:hover.download-link, a:hover.license, a:hover.home-link
+{
+	text-decoration: underline;
+}

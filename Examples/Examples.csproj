@@ -1,0 +1,206 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4222A150-C308-4E65-9E61-7109ACC207E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Examples</RootNamespace>
+    <AssemblyName>Examples</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.htm" />
+    <Content Include="images\github.png" />
+    <Content Include="images\ufxtract-strap.gif" />
+    <Content Include="reporting-errors.htm" />
+    <Content Include="reporting-reports.htm" />
+    <Content Include="net-formatdefination.htm" />
+    <Content Include="net-read.htm" />
+    <Content Include="input-html.htm" />
+    <Content Include="input-urlfragment.htm" />
+    <Content Include="input-url.htm" />
+    <Content Include="formats-formatselection.htm" />
+    <Content Include="formats-multipleformats.htm" />
+    <Content Include="Formats\formatselection.aspx" />
+    <Content Include="Formats\multipleformats.aspx" />
+    <Content Include="Inputs\html.aspx" />
+    <Content Include="Inputs\url.aspx" />
+    <Content Include="Inputs\urlfragment.aspx" />
+    <Content Include="Net\read.aspx" />
+    <Content Include="output-jsonp.htm" />
+    <Content Include="output-machinehtml.htm" />
+    <Content Include="output-json.htm" />
+    <Content Include="output-xml.htm" />
+    <Content Include="output-string.htm" />
+    <Content Include="css\site.css" />
+    <Content Include="default.htm" />
+    <Content Include="images\ufxtract-logo.gif" />
+    <Content Include="Output\jsonp.aspx" />
+    <Content Include="Output\json.aspx" />
+    <Content Include="Output\machinehtml.aspx" />
+    <Content Include="Output\string.aspx" />
+    <Content Include="Output\xml.aspx" />
+    <Content Include="Reporting\errors.aspx" />
+    <Content Include="Reporting\reports.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formats\formatselection.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>formatselection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formats\formatselection.aspx.designer.cs">
+      <DependentUpon>formatselection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formats\multipleformats.aspx.cs">
+      <DependentUpon>multipleformats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formats\multipleformats.aspx.designer.cs">
+      <DependentUpon>multipleformats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\html.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>html.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\html.aspx.designer.cs">
+      <DependentUpon>html.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\url.aspx.cs">
+      <DependentUpon>url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inputs\url.aspx.designer.cs">
+      <DependentUpon>url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\urlfragment.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>urlfragment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\urlfragment.aspx.designer.cs">
+      <DependentUpon>urlfragment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Net\read.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>read.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Net\read.aspx.designer.cs">
+      <DependentUpon>read.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\jsonp.aspx.cs">
+      <DependentUpon>jsonp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Output\jsonp.aspx.designer.cs">
+      <DependentUpon>jsonp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\json.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>json.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\json.aspx.designer.cs">
+      <DependentUpon>json.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\machinehtml.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>machinehtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\machinehtml.aspx.designer.cs">
+      <DependentUpon>machinehtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\string.aspx.cs">
+      <DependentUpon>string.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Output\string.aspx.designer.cs">
+      <DependentUpon>string.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\xml.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>xml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Output\xml.aspx.designer.cs">
+      <DependentUpon>xml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\errors.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>errors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\errors.aspx.designer.cs">
+      <DependentUpon>errors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\reports.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\reports.aspx.designer.cs">
+      <DependentUpon>reports.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ufXtract\UfXtract.csproj">
+      <Project>{9FA16231-0AD0-4320-9128-49D210BCA4B3}</Project>
+      <Name>UfXtract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4114</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

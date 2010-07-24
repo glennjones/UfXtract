@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/site.css" type="text/css" />
+  <title>ufXtract</title>
+</head>
+<body class="documentation ufxtract">
+
+
+<a href="http://www.ufxtract.com/"><h1><span>Ufxtract</span></h1></a>
+<h2 class="strap"><span>Powerful, easy to use .Net microformats parser</span></h2>
+
+<div class="container">
+    <div class="column1">
+
+		<h2 class="frist-item">About UfXtract .Net library</h2>
+        <p>
+        With just a few lines of code you can load and parse microformats from Urls or HTML strings. 
+        You can then exact the data directly in .Net or convert it into JSON, JSON-P or XML.
+        </p>
+        
+<!-- code formatted by http://manoli.net/csharpformat/ -->
+<pre class="csharpcode">
+<span class="kwrd">using</span> UfXtract;
+
+<span class="kwrd">string</span> url = <span class="str">"http://www.glennjones.net/about/"</span>;
+
+UfWebRequest webRequest = <span class="kwrd">new</span> UfWebRequest();
+webRequest.Load(url, UfFormats.HCard());
+
+<span class="kwrd">if</span> (webRequest.Data.Nodes.Count &gt; 0)
+{
+   UfDataToJson dataConvertor = <span class="kwrd">new</span> UfDataToJson();
+   Response.ContentType = <span class="str">"application/json"</span>;
+   Response.Write(dataConvertor.Convert(webRequest.Data, UfFormats.HCard()));
+}</pre>
+    
+       <h2>Supported formats</h2> 
+        <p>UfXtract supports a number of microformats
+		<a href="http://microformats.org/wiki/hcard">hCard</a>,
+		<a href="http://microformats.org/wiki/hcalendar">hCalendar</a>,
+		<a href="http://microformats.org/wiki/hreview">hReview</a>,
+		<a href="http://microformats.org/wiki/hresume">hResume</a>,
+		<a href="http://microformats.org/wiki/hatom">hAtom</a>,
+		<a href="http://microformats.org/wiki/XFN">XFN</a>,
+		<a href="http://microformats.org/wiki/rel-tag">rel-tag</a>,
+		<a href="http://microformats.org/wiki/geo">geo</a>,
+		<a href="http://microformats.org/wiki/adr">adr</a>,
+		<a href="http://microformats.org/wiki/rel-nofollow">rel-nofollow</a>,
+		<a href="http://microformats.org/wiki/rel-license">rel-license</a>,
+		<a href="http://microformats.org/wiki/rel-directory">rel-directory</a>,
+		<a href="http://microformats.org/wiki/rel-home">rel-home</a>,
+		<a href="http://microformats.org/wiki/rel-enclosure">rel-enclosure</a>,
+		<a href="http://microformats.org/wiki/rel-payment">rel-payement</a> and
+		<a href="http://microformats.org/wiki/vote-links">votelinks</a>. It also 
+		supports a handful of <a href="http://microformats.org/wiki/posh">POSH</a> 
+		patterns
+       hCard-XFN,
+       rel-me,
+       rel-next/previous,
+       test-suite and test-fixture. The direct support of rel-me and 
+		rel-next/previous was added to help people build social graph spiders.
+		</p>
+		
+		<h2>Unit tests</h2>
+		<p>
+		To test that UfXtract correctly parses the major microformats I have 
+		created a <a href="http://www.ufxtract.com/testsuite/">microformats test 
+		suite</a> which has input from a number of other parser authors. These 
+		HTML documents are marked up with test-suite and test-fixture patterns. 
+		This allows UfXtract to auto generate NUnit test classes. The UfXtract 
+		includes a console application called UfXtractUnitTestBuilder which will 
+		update the test directly from the web.
+		</p>
+		
+		<h2>Fork the code</h2>
+		<p>Please feel free to fork the code and pass back any contribution you 
+		would like me to add. </p>
+   
+   
+   </div>
+    
+        <div class="column2">
+        
+            <a href="http://github.com/glennjones/ufxtract"><img border="0" src="images/github.png" alt="GitHub logo" /></a>
+            <a class="download-link" href="http://github.com/glennjones/ufxtract">Download Code</a>
+            <a class="license" rel="license" href="license.htm">MIT Open Source License</a>
+            
+            <a class="home-link" href="default.htm">About the UfXtract .Net library</a>
+    
+            <h2>Output formats</h2>
+            <ul>
+                <li><a href="output-json.htm">JSON</a></li>
+                <li><a href="output-jsonp.htm">JSON-P</a></li>
+                <li><a href="output-xml.htm">XML</a></li>
+                <li><a href="output-string.htm">String</a></li>
+                <li><a href="output-machinehtml.htm">Machine HTML</a></li>
+            </ul>
+            
+            <h2>Formats</h2>
+            <ul>
+                <li><a href="formats-formatselection.htm">Format selection</a></li>
+                <li><a href="formats-multipleformats.htm">Multiple formats at once</a></li>
+            </ul>
+            
+            <h2>Inputs</h2>
+            <ul>
+                <li><a href="input-url.htm">Url</a></li>
+                <li><a href="input-urlfragment.htm">Url fragments</a></li>
+                <li><a href="input-html.htm">HTML strings</a></li>
+            </ul>
+            
+            <h2>.Net</h2>
+            <ul>
+                <li><a href="net-read.htm">Reading data</a></li>
+                <li><a href="net-formatdefination.htm">Microformt definitions</a></li>
+            </ul>
+            
+            <h2>Reporting and errors</h2>
+            <ul>
+                <li><a href="reporting-reports.htm">Reporting</a></li>
+                <li><a href="reporting-errors.htm">Errors</a></li>
+            </ul>
+        </div>
+        
+   </div>
+        
+	
+        <p class="copyright">&copy; 2007-2010 <span class="vcard"><a class="fn url" href="http://www.glennjones.net">Glenn Jones</a></span>. All Rights Reserved.</p>
+      
+       
+       
+       
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try{
+        var pageTracker = _gat._getTracker("UA-3021774-4");
+        pageTracker._trackPageview();
+        } catch(err) {}
+        </script>
+</body>
+</html>
+
+

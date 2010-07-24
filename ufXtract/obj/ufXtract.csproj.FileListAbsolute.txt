@@ -1,0 +1,40 @@
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.xml
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Debug\ufXtract.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Debug\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Debug\ufXtract.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Debug\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\Newtonsoft.Json.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\Newtonsoft.Json.xml
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\ufXtract.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\Newtonsoft.Json.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\ufXtract.HtmlAgilityPack.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\ufXtract.HtmlAgilityPack.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\Newtonsoft.Json.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Release\Newtonsoft.Json.xml
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Release\ufXtract.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\obj\Release\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.HtmlAgilityPack.dll
+C:\Documents and Settings\gjones\My Documents\Visual Studio 2005\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.HtmlAgilityPack.pdb
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.dll
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\Newtonsoft.Json.xml
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\obj\Debug\ufXtract.dll
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\obj\Debug\ufXtract.pdb
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\Newtonsoft.Json.pdb
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.dll
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.pdb
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.xml
+C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\UfXtract.xml

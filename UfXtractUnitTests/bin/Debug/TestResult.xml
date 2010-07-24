@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\bin\Debug\ufXtractUnitTests.dll" total="145" errors="2" failures="3" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-07-21" time="19:09:58">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.3603" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.2\bin\net-2.0" machine-name="GLENNJONES" user="gjones" user-domain="CLARENCE" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite name="C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\bin\Debug\ufXtractUnitTests.dll" executed="True" success="False" time="25.876" asserts="0">
+    <results>
+      <test-suite name="UfXtract" executed="True" success="False" time="25.845" asserts="0">
+        <results>
+          <test-suite name="UnitTests" executed="True" success="False" time="25.814" asserts="0">
+            <results>
+              <test-suite name="hCard" executed="True" success="False" time="25.782" asserts="0">
+                <results>
+                  <test-suite name="test_hCard_1" executed="True" success="True" time="2.781" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_01" executed="True" success="True" time="2.219" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_02" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_03" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_04" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_05" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_06" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_07" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_08" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_09" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_10" executed="True" success="True" time="0.063" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_10" executed="True" success="True" time="2.047" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_01" executed="True" success="True" time="0.328" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_02" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_03" executed="True" success="True" time="0.313" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_04" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_05" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_06" executed="True" success="True" time="0.125" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_07" executed="True" success="True" time="0.250" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_08" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_09" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_10" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_11" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_12" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_13" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_14" executed="True" success="True" time="0.109" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_11" executed="True" success="True" time="0.375" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_11.Test_01" executed="True" success="True" time="0.234" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_11.Test_02" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_11.Test_03" executed="True" success="True" time="0.094" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_12" executed="True" success="True" time="0.844" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_01" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_02" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_03" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_04" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_05" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_06" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_07" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_08" executed="True" success="True" time="0.203" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_13" executed="True" success="True" time="0.094" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_13.Test_01" executed="True" success="True" time="0.047" asserts="0" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_13.Test_02" executed="True" success="True" time="0.047" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_14" executed="True" success="True" time="0.109" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_14.Test_01" executed="True" success="True" time="0.063" asserts="0" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_14.Test_02" executed="True" success="True" time="0.047" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_15" executed="True" success="True" time="0.969" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_01" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_02" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_03" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_04" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_05" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_06" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_07" executed="True" success="True" time="0.266" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_08" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_09" executed="True" success="True" time="0.094" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_16" executed="True" success="True" time="1.000" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_01" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_02" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_03" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_04" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_05" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_06" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_07" executed="True" success="True" time="0.391" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_08" executed="True" success="True" time="0.094" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_17" executed="True" success="True" time="0.531" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_01" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_02" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_03" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_04" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_05" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_06" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_07" executed="True" success="True" time="0.078" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_18" executed="True" success="True" time="0.531" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_01" executed="True" success="True" time="0.328" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_02" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_03" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_04" executed="True" success="True" time="0.063" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_19" executed="True" success="True" time="0.172" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_19.Test_01" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_19.Test_02" executed="True" success="True" time="0.078" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_2" executed="True" success="True" time="2.188" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_01" executed="True" success="True" time="0.125" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_02" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_03" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_04" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_05" executed="True" success="True" time="0.141" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_06" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_07" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_08" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_09" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_10" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_11" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_12" executed="True" success="True" time="0.125" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_13" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_14" executed="True" success="True" time="0.125" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_15" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_16" executed="True" success="True" time="0.109" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_20" executed="True" success="True" time="0.438" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_20.Test_01" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_20.Test_02" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_20.Test_03" executed="True" success="True" time="0.078" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_21" executed="True" success="True" time="0.563" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_01" executed="True" success="True" time="0.094" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_02" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_03" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_04" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_05" executed="True" success="True" time="0.063" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_06" executed="True" success="True" time="0.188" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_3" executed="True" success="True" time="2.078" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_01" executed="True" success="True" time="0.328" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_02" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_03" executed="True" success="True" time="0.266" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_04" executed="True" success="True" time="0.109" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_05" executed="True" success="True" time="0.047" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_06" executed="True" success="True" time="0.297" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_07" executed="True" success="True" time="0.563" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_08" executed="True" success="True" time="0.156" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_4" executed="True" success="True" time="1.297" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_01" executed="True" success="True" time="0.250" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_02" executed="True" success="True" time="0.266" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_03" executed="True" success="True" time="0.234" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_04" executed="True" success="True" time="0.203" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_05" executed="True" success="True" time="0.344" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_5" executed="True" success="True" time="0.609" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_5.Test_01" executed="True" success="True" time="0.078" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_5.Test_02" executed="True" success="True" time="0.234" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_5.Test_03" executed="True" success="True" time="0.281" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_6" executed="True" success="False" time="2.109" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_01" executed="True" success="True" time="0.219" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_02" executed="True" success="False" time="0.375" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Where a type is specified, but the value is not then the node text is the value
+  Expected string length 16 but was 19. Strings differ at index 0.
+  Expected: "john@example.com"
+  But was:  "notthis@example.com"
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_6.Test_02() in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\test_hCard_6.cs:line 49
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_03" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_04" executed="True" success="True" time="0.188" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_05" executed="True" success="False" time="0.500" asserts="1">
+                        <failure>
+                          <message><![CDATA[  The thrid type value "lotus-notes" is incorrect
+  Expected: False
+  But was:  True
+]]></message>
+                          <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_6.Test_05() in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\test_hCard_6.cs:line 84
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_06" executed="True" success="True" time="0.250" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_07" executed="True" success="False" time="0.219" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_6.Test_07() in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\test_hCard_6.cs:line 101
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_7" executed="True" success="False" time="1.422" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_01" executed="True" success="True" time="0.344" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_02" executed="True" success="True" time="0.219" asserts="0" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_03" executed="True" success="True" time="0.203" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_04" executed="True" success="False" time="0.422" asserts="1">
+                        <failure>
+                          <message><![CDATA[  The second type value "next-door" is incorrect
+  Expected: False
+  But was:  True
+]]></message>
+                          <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_7.Test_04() in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\test_hCard_7.cs:line 73
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_05" executed="True" success="True" time="0.234" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_8" executed="True" success="False" time="0.641" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_8.Test_01" executed="True" success="True" time="0.172" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_8.Test_02" executed="True" success="False" time="0.188" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.ArgumentException : Out of range]]></message>
+                          <stack-trace><![CDATA[at UfXtract.UfDataNodes.get_Item(Int32 index) in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\UfDataNodes.cs:line 173
+at UfXtract.UfDataNodes.GetNameByPosition(String name, Int32 pos) in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\UfDataNodes.cs:line 56
+at UfXtract.UnitTests.hCard.test_hCard_8.Test_02() in C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\test_hCard_8.cs:line 48
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_8.Test_03" executed="True" success="True" time="0.188" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_9" executed="True" success="True" time="0.609" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_9.Test_01" executed="True" success="True" time="0.391" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_9.Test_02" executed="True" success="True" time="0.219" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="test_hCard_99" executed="True" success="True" time="4.266" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_01" executed="True" success="True" time="0.469" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_02" executed="True" success="True" time="0.359" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_03" executed="True" success="True" time="0.188" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_04" executed="True" success="True" time="0.219" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_05" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_06" executed="True" success="True" time="0.141" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_07" executed="True" success="True" time="0.203" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_08" executed="True" success="True" time="0.266" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_09" executed="True" success="True" time="0.219" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_10" executed="True" success="True" time="0.172" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_11" executed="True" success="True" time="0.188" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_12" executed="True" success="True" time="0.219" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_13" executed="True" success="True" time="0.219" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_14" executed="True" success="True" time="0.156" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_15" executed="True" success="True" time="0.234" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_16" executed="True" success="True" time="0.281" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_17" executed="True" success="True" time="0.250" asserts="1" />
+                      <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_18" executed="True" success="True" time="0.156" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

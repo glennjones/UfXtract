@@ -1,0 +1,8 @@
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\bin\Debug\ufXtract.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\bin\Debug\ufXtract.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\bin\Debug\HtmlAgilityPack.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\bin\Debug\HtmlAgilityPack.xml
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\obj\Debug\ufXtract.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library\obj\Debug\ufXtract.pdb

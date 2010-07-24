@@ -1,0 +1,12 @@
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\ufxtract-library-UnitTests.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\ufxtract-library-UnitTests.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\ufXtract.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\HtmlAgilityPack.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\HtmlAgilityPack.xml
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\ufXtract.pdb
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\bin\Debug\ufXtract.xml
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\obj\Debug\ufxtract-library-UnitTests.dll
+C:\Users\gjones\Documents\Visual Studio 2005\Projects\ufxtract-library\ufxtract-library.UnitTests\obj\Debug\ufxtract-library-UnitTests.pdb

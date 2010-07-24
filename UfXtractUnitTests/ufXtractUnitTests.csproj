@@ -1,0 +1,118 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF8F7B74-5370-4B37-AC4C-2664B634FC24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UfXtract.UnitTests</RootNamespace>
+    <AssemblyName>UfXtractUnitTests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="test_Geo.cs" />
+    <Compile Include="test_hCalendar_1.cs" />
+    <Compile Include="test_hCalendar_10.cs" />
+    <Compile Include="test_hCalendar_11.cs" />
+    <Compile Include="test_hCalendar_12.cs" />
+    <Compile Include="test_hCalendar_13.cs" />
+    <Compile Include="test_hCalendar_2.cs" />
+    <Compile Include="test_hCalendar_3.cs" />
+    <Compile Include="test_hCalendar_4.cs" />
+    <Compile Include="test_hCalendar_5.cs" />
+    <Compile Include="test_hCalendar_6.cs" />
+    <Compile Include="test_hCalendar_7.cs" />
+    <Compile Include="test_hCalendar_8.cs" />
+    <Compile Include="test_hCalendar_9.cs" />
+    <Compile Include="test_hCard_1.cs" />
+    <Compile Include="test_hCard_10.cs" />
+    <Compile Include="test_hCard_11.cs" />
+    <Compile Include="test_hCard_12.cs" />
+    <Compile Include="test_hCard_13.cs" />
+    <Compile Include="test_hCard_14.cs" />
+    <Compile Include="test_hCard_15.cs" />
+    <Compile Include="test_hCard_16.cs" />
+    <Compile Include="test_hCard_17.cs" />
+    <Compile Include="test_hCard_18.cs" />
+    <Compile Include="test_hCard_19.cs" />
+    <Compile Include="test_hCard_2.cs" />
+    <Compile Include="test_hCard_20.cs" />
+    <Compile Include="test_hCard_21.cs" />
+    <Compile Include="test_hCard_3.cs" />
+    <Compile Include="test_hCard_4.cs" />
+    <Compile Include="test_hCard_5.cs" />
+    <Compile Include="test_hCard_6.cs" />
+    <Compile Include="test_hCard_7.cs" />
+    <Compile Include="test_hCard_8.cs" />
+    <Compile Include="test_hCard_9.cs" />
+    <Compile Include="test_hCard_99.cs" />
+    <Compile Include="test_hResume_1.cs" />
+    <Compile Include="test_hResume_2.cs" />
+    <Compile Include="test_hResume_3.cs" />
+    <Compile Include="test_hResume_4.cs" />
+    <Compile Include="test_hResume_6.cs" />
+    <Compile Include="test_hResume_7.cs" />
+    <Compile Include="test_ISODurations.cs" />
+    <Compile Include="test_ISODateTime.cs" />
+    <Compile Include="test_PhoneNumber.cs" />
+    <Compile Include="test_value_dt_test_abbr_YYYY_MM_DD_abbr_HH_MM.cs" />
+    <Compile Include="test_value_dt_test_abbr_YYYY_MM_DD__HH_MM.cs" />
+    <Compile Include="test_value_dt_test_YYYY_DDD__HH_MM_SS.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__0Ham_EEam.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__12am_12pm.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__abbr_HH_MMpm.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__HHpm.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__HH_MM.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__HH_MMZ_EE_NN_UUZ.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__HH_MM_XX_YY__EE_NN_UU__XXYY.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__HH_MM_XX__EE_NN_UU__Y.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__Hpm_EEpm.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__H_MMam_Epm.cs" />
+    <Compile Include="test_value_dt_test_YYYY_MM_DD__H_MM_SSpm_EE_NN_UUpm.cs" />
+    <Compile Include="test_W3CNote.cs" />
+    <Compile Include="test_RFC3389.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test_YYYY_MM_DD__HH_MM_SS_XXYY__EE_NN__Z.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ufXtract\UfXtract.csproj">
+      <Project>{9FA16231-0AD0-4320-9128-49D210BCA4B3}</Project>
+      <Name>UfXtract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
