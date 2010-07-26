@@ -37,6 +37,8 @@ namespace UfXtract
         /// <param name="child">Child node been optimized</param>
         public static void OptimizesNode(UfDataNode parent, UfDataNode child)
         {
+
+
             if (child.Name == "org")
                 OrgOptimization(child);
 
@@ -160,10 +162,17 @@ namespace UfXtract
                         bool addOptimization = true;
                         bool givenFrist = true;
 
-                        // org optimization
-                        if (parent.Nodes["org"] != null)
-                            if (fnnode.Value == parent.Nodes["org"].Value)
-                                addOptimization = false;
+                        // If org = fn then stop implied name "n" optimization
+                        for (int i = 0; i < parent.Nodes.Count; i++)
+                        {
+                            if (parent.Nodes[i].Name == "org"){
+                                if (fnnode.Value == parent.Nodes[i].Value || 
+                                    fnnode.Value == parent.Nodes[i].DescendantValue("organization-name"))
+                                    addOptimization = false;
+
+                            }
+                        }
+
 
                         if (elm[0].EndsWith(","))
                         {
