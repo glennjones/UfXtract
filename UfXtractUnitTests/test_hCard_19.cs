@@ -17,7 +17,7 @@ public class test_hCard_19
 // http://www.ufxtract.com/testsuite/hcard/hcard19.htm
 // hCard 19 - object include test
 // This page was design to test the object include pattern. http://microformats.org/wiki/include-pattern.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

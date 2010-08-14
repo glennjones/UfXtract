@@ -17,7 +17,7 @@ public class test_hCard_9
 // http://www.ufxtract.com/testsuite/hcard/hcard9.htm
 // hCard 9 - extracting geo singular and paired values test
 // This page was design to comprehensively test the geo format. Most of these tests are based on Mike Kaply work for the Firefox. The IsEqualToGeo method canonicalise and compares geo's.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

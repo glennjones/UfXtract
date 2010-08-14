@@ -17,7 +17,7 @@ public class test_hCard_2
 // http://www.ufxtract.com/testsuite/hcard/hcard2.htm
 // hCard 2 - multiple occurrence test
 // This page was design to test that values of a hcard which are can have multiple occurrences are parsed correctly.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

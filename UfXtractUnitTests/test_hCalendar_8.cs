@@ -17,7 +17,7 @@ public class test_hCalendar_8
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar8.htm
 // hCalendar 8 - extracting geo singular and paired values test
 // This page was design to comprehensively test the geo format. Most of these tests are based on Mike Kaply work for the Firefox.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

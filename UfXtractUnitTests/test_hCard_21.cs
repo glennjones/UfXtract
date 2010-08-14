@@ -17,7 +17,7 @@ public class test_hCard_21
 // http://www.ufxtract.com/testsuite/hcard/hcard21.htm
 // hCard 21 - opaque/embedded hCards
 // This page was design to test that embedded hCards are opaque to the parent hCard. This test was originally created by Toby Inkster.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCalendar_3
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar3.htm
 // hCalendar 3 - ISO duration format test
 // This page was design to comprehensively test the ISO duration format. More information on duration representations in microformats
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

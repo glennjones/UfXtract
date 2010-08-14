@@ -38,3 +38,14 @@ C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\
 C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.pdb
 C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\HtmlAgilityPack.xml
 C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtract\bin\Debug\UfXtract.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\UfXtract.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\UfXtract.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\HtmlAgilityPack.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\HtmlAgilityPack.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\HtmlAgilityPack.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\Newtonsoft.Json.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtract\bin\Debug\Newtonsoft.Json.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtract\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gjones\UfXtract\ufXtract\obj\Debug\UfXtract.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtract\obj\Debug\UfXtract.pdb

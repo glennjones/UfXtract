@@ -43,6 +43,7 @@
     <Compile Include="test_hCalendar_11.cs" />
     <Compile Include="test_hCalendar_12.cs" />
     <Compile Include="test_hCalendar_13.cs" />
+    <Compile Include="test_hCalendar_14.cs" />
     <Compile Include="test_hCalendar_2.cs" />
     <Compile Include="test_hCalendar_3.cs" />
     <Compile Include="test_hCalendar_4.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="test_hCard_2.cs" />
     <Compile Include="test_hCard_20.cs" />
     <Compile Include="test_hCard_21.cs" />
+    <Compile Include="test_hCard_22.cs" />
     <Compile Include="test_hCard_3.cs" />
     <Compile Include="test_hCard_4.cs" />
     <Compile Include="test_hCard_5.cs" />

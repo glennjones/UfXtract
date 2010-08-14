@@ -17,7 +17,7 @@ public class test_hCard_15
 // http://www.ufxtract.com/testsuite/hcard/hcard15.htm
 // hCard 15 - ISO date format test - W3C Note DateTime profile
 // This page was design to comprehensively test the W3C Note DateTime profile. The IsEqualToISODate method normalisation and compares dates.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

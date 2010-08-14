@@ -17,7 +17,7 @@ public class test_hCard_8
 // http://www.ufxtract.com/testsuite/hcard/hcard8.htm
 // hCard 8 - extracting URLs test
 // This page test that parsers can extract URLs from differnt structures.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

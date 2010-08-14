@@ -17,7 +17,7 @@ public class test_hCalendar_9
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar9.htm
 // hCalendar 9 - geo comprehensive data format test
 // This page was design to comprehensively test the geo format. Most of these tests are based on  Mike Kaply work for the Firefox.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -59,7 +59,11 @@ namespace UfXtract
         public UfElementDescriber BaseElement
         {
             get { return baseElement; }
-            set { baseElement = value; }
+            set { 
+                baseElement = value;
+                if( baseElement.CompoundName == "")
+                    baseElement.RootElement = true;
+            }
         }
 
         /// <summary>

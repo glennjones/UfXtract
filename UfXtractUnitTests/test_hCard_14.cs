@@ -17,7 +17,7 @@ public class test_hCard_14
 // http://www.ufxtract.com/testsuite/hcard/hcard14.htm
 // hCard 14 - area element test
 // This page was design to test the use of the area element. The IsEqualToPhoneNumber method canonicalises and compares phone numbers.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

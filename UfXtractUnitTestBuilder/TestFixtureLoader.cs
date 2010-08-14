@@ -266,6 +266,15 @@ namespace UfXtractUnitTestBuilder
                 stringBuilder.AppendLine("Assert.That(testDateTime, Is.EqualTo(resultDateTime), \"" + comment.Replace("\"", "\\\"") + "\" );");
             }
 
+            if (result.Contains("IsEqualToHTML5Date("))
+            {
+                result = result.Replace("IsEqualToHTML5Date(", "").Replace(")", "");
+                stringBuilder.AppendLine("string test = " + BuildObjectRefPath(test) + ";");
+                stringBuilder.AppendLine("string testDateTime = new Html5DateTime(test).ToString();");
+                stringBuilder.AppendLine("string resultDateTime = new Html5DateTime(" + result + ").ToString();");
+                stringBuilder.AppendLine("Assert.That(testDateTime, Is.EqualTo(resultDateTime), \"" + comment.Replace("\"", "\\\"") + "\" );");
+            }
+
             if (result.Contains("IsEqualToGeo("))
             {
                 result = result.Replace("IsEqualToGeo(", "").Replace(")", "");

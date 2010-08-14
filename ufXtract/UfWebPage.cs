@@ -91,6 +91,9 @@ namespace UfXtract
                     credentialCache.Add(this.Uri, "Basic", new NetworkCredential(username, password));
                     WebReq.Credentials = credentialCache;
                 }
+
+                
+
                 WebResp = (HttpWebResponse)WebReq.GetResponse();
                 Stream stream = WebResp.GetResponseStream();
                 StreamReader streamReader;
@@ -106,6 +109,10 @@ namespace UfXtract
                 //this.Domain = WebResp.ResponseUri.Authority;
                 statusCode = (int)WebResp.StatusCode;
 
+                // Close to stop connection locking
+                WebResp.Close();
+                
+
             }
             catch (WebException ex)
             {
@@ -113,6 +120,7 @@ namespace UfXtract
                     throw;
 
                 statusCode = (int)((HttpWebResponse)ex.Response).StatusCode;
+                WebResp.Close();
             }
 
 

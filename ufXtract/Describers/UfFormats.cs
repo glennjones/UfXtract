@@ -29,6 +29,7 @@ namespace UfXtract
             agenthCard.BaseElement.ConcatenateValues = false;
             agenthCard.BaseElement.Multiples = true;
             uFormat.BaseElement.Elements.Add(agenthCard.BaseElement);
+            agenthCard.BaseElement.RootElement = false;
 
             // Add second level of agent
             UfFormatDescriber agenthCard2 = BaseHCard();
@@ -37,6 +38,7 @@ namespace UfXtract
             agenthCard2.BaseElement.ConcatenateValues = false;
             agenthCard2.BaseElement.Multiples = true;
             agenthCard.BaseElement.Elements.Add(agenthCard2.BaseElement);
+            agenthCard2.BaseElement.RootElement = false;
 
             // FallBack text only
             uFormat.BaseElement.Elements.Add(new UfElementDescriber("agent", false, true, UfElementDescriber.PropertyTypes.Text));

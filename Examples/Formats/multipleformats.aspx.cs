@@ -23,6 +23,9 @@ namespace Examples.Formats
             ArrayList formatArray = new ArrayList();
             formatArray.Add(UfFormats.HCard());
             formatArray.Add(UfFormats.Xfn());
+            formatArray.Add(UfFormats.Adr());
+            formatArray.Add(UfFormats.License());
+
 
 
             webRequest.Load(url, formatArray);

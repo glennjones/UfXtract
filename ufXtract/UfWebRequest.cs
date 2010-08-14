@@ -56,6 +56,7 @@ namespace UfXtract
                         urlReport.Address = webPage.Url;
                         urlReport.Status = webPage.StatusCode;
                         parsedUrls.Add(urlReport);
+                        DateTime started = DateTime.Now;
 
                         if (webPage.StatusCode == 200 && webPage.Html != null)
                             ParseUf(webPage.Html, webPage.Url, formatDescriber, false, urlReport);
@@ -63,6 +64,10 @@ namespace UfXtract
                         if (webPage.StatusCode != 200)
                             throw (new Exception("Could not load url: " + url + " " + webPage.StatusCode));
 
+
+                        DateTime ended = DateTime.Now;
+                        urlReport.LoadTime = ended.Subtract(started);
+                        Urls.Add(urlReport);
                     }
 
                 }
@@ -103,11 +108,13 @@ namespace UfXtract
                     {
                         Url urlReport = new Url();
                         urlReport.Address = webPage.Url;
+                        DateTime started = DateTime.Now;
+                        urlReport.Status = webPage.StatusCode;
 
                         // Process many time
                         foreach (UfFormatDescriber format in formatDescriberArray)
                         {
-                            urlReport.Status = webPage.StatusCode;
+                            
                             parsedUrls.Add(urlReport);
 
                             if (webPage.StatusCode == 200 && webPage.Html != null)
@@ -117,6 +124,11 @@ namespace UfXtract
                                 throw (new Exception("Could not load url: " + url + " " + webPage.StatusCode));
                             
                         }
+
+                        DateTime ended = DateTime.Now;
+                        urlReport.LoadTime = ended.Subtract(started);
+                        Urls.Clear();
+                        Urls.Add(urlReport);
                     }
                 }
                 else
@@ -178,7 +190,6 @@ namespace UfXtract
         // Parse uf
         private void ParseUf(HtmlDocument htmlDoc, string url, UfFormatDescriber format, bool multiples, Url urlReport)
         {
-            DateTime started = DateTime.Now;
 
             UfParse ufparse = new UfParse();
             ufparse.Load(htmlDoc, url, format);
@@ -187,9 +198,8 @@ namespace UfXtract
             else
                 data = ufparse.Data;
 
-            DateTime ended = DateTime.Now;
-            urlReport.LoadTime = ended.Subtract(started);
             urlReport.HtmlPageTitle = ufparse.HtmlPageTitle;
+
         }
 
 

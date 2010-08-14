@@ -17,7 +17,7 @@ public class test_hCard_18
 // http://www.ufxtract.com/testsuite/hcard/hcard18.htm
 // hCard 18 - table header include test
 // This page was design to test the table header include pattern.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCard_99
 // http://www.ufxtract.com/testsuite/hcard/hcard99.htm
 // hCard 99 - implied n optimization test
 // This page was design to test the implied "n" optimization which is explained on the wiki http://microformats.org/wiki/hcard#Implied_.22n.22_Optimization. Examples copied from the orginal test suite.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

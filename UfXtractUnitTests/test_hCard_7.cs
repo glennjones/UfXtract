@@ -17,7 +17,7 @@ public class test_hCard_7
 // http://www.ufxtract.com/testsuite/hcard/hcard7.htm
 // hCard 7 - extracting tel (telephone) number test
 // This page test that parsers can extract telephone numbers from different structures. This includes type property and value excerpting test. The IsEqualToPhoneNumber method canonicalises and compares phone numbers.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCard_5
 // http://www.ufxtract.com/testsuite/hcard/hcard5.htm
 // hCard 5 - multiple values in class attribute test
 // This page test that parsers can find a class name where a author has used multiple values in the class attributes. The IsEqualToISODate method normalisation and compares dates.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

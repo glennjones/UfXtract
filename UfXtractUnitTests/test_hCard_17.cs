@@ -17,7 +17,7 @@ public class test_hCard_17
 // http://www.ufxtract.com/testsuite/hcard/hcard17.htm
 // hCard 17 - implied organization-name optimization test
 // This page was design to test the implied "org" optimization which is explained on the wiki http://microformats.org/wiki/hcard#Implied_.22organization-name.22_Optimization. Examples copied from the original test suite.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;
@@ -92,6 +92,57 @@ public void Test_07()
 // vcard[6].org[0].organization-name
 string test = nodes.GetNameByPosition("vcard", 6).Nodes.GetNameByPosition("org", 0).Nodes["organization-name"].Value;
 Assert.That(test, Is.EqualTo("World Wide Web Consortium"), "The organization-name value" );
+}
+ 
+ 
+[Test]
+public void Test_08()
+{
+// vcard[0].n.given-name
+bool hasProperty = true;
+try
+{
+string test = nodes.GetNameByPosition("vcard", 0).Nodes["n"].Nodes["given-name"].Value;
+}
+catch(Exception ex)
+{
+hasProperty = false;
+}
+Assert.That(hasProperty, Is.False, "The name optimization should not be applied if fn = org" );
+}
+ 
+ 
+[Test]
+public void Test_09()
+{
+// vcard[7].n.given-name
+bool hasProperty = true;
+try
+{
+string test = nodes.GetNameByPosition("vcard", 7).Nodes["n"].Nodes["given-name"].Value;
+}
+catch(Exception ex)
+{
+hasProperty = false;
+}
+Assert.That(hasProperty, Is.False, "The name optimization should not be applied if fn = org" );
+}
+ 
+ 
+[Test]
+public void Test_10()
+{
+// vcard[8].n.given-name
+bool hasProperty = true;
+try
+{
+string test = nodes.GetNameByPosition("vcard", 8).Nodes["n"].Nodes["given-name"].Value;
+}
+catch(Exception ex)
+{
+hasProperty = false;
+}
+Assert.That(hasProperty, Is.False, "The name optimization should not be applied if fn = org" );
 }
  
 }

@@ -17,7 +17,7 @@ public class test_hCard_1
 // http://www.ufxtract.com/testsuite/hcard/hcard1.htm
 // hCard 1 - single occurrence test
 // This page was design to test that values of a hcard which are meant to have only a single occurrence are parsed correctly. The IsEqualToISODate method uses date normalisation and compare methods.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

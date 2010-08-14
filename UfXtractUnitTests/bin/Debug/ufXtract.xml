@@ -4,448 +4,137 @@
         <name>UfXtract</name>
     </assembly>
     <members>
-        <member name="T:UfXtract.Utilities.Geo">
+        <member name="T:UfXtract.UfElementDescriber">
             <summary>
-            Geo structure and conversion class
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.#ctor">
+        <member name="M:UfXtract.UfElementDescriber.#ctor">
             <summary>
-            Geo structure and conversion
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.#ctor(System.Decimal,System.Decimal)">
+        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean)">
             <summary>
-            Geo structure and conversion
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
-            <param name="latitude">latitude</param>
-            <param name="longitude">longitude</param>
+            <param name="name">Element name</param>
+            <param name="mandatory">Is mandatory</param>
+            <param name="multiples">Allow multiples</param>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.#ctor(System.String)">
+        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,UfXtract.UfElementDescriber.PropertyTypes)">
             <summary>
-            Geo structure and conversion
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
-            <param name="geo">Geo as ; delimited string ie 37.77;-122.41</param>
+            <param name="name">Element name</param>
+            <param name="mandatory">Is mandatory</param>
+            <param name="multiples">Allow multiples</param>
+            <param name="type">Property type</param>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.Reset">
+        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,UfXtract.UfElementDescriber.PropertyTypes)">
             <summary>
-            Resets all the properties
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
+            <param name="name">Element name</param>
+            <param name="mandatory">Is mandatory</param>
+            <param name="multiples">Allow multiples</param>
+            <param name="concatenateValues">Concatenate multiple text values together</param>
+            <param name="type">Property type</param>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.Parse(System.String)">
+        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,System.String)">
             <summary>
-            Parses a string representation of a geo
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
-            <param name="geo">Geo as ; delimited string ie 37.77;-122.41</param>
+            <param name="name">Element name</param>
+            <param name="mandatory">Is mandatory</param>
+            <param name="multiples">Allow multiples</param>
+            <param name="typevalues">Comma delimited list of allow values</param>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.FormatNumber(System.String)">
+        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,System.String)">
             <summary>
-            Remove trailing zeros and decimal points from string representation of a number.
+            Describers the use of HTML element (tag), as part of microformat format description
             </summary>
-            <param name="number">Number</param>
-            <returns>Number</returns>
+            <param name="name">Element name</param>
+            <param name="mandatory">Is mandatory</param>
+            <param name="multiples">Allow multiples</param>
+            <param name="concatenateValues">Concatenate multiple text values together</param>
+            <param name="typevalues">Comma delimited list of allow values</param>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.Parse(System.String,System.String)">
+        <member name="P:UfXtract.UfElementDescriber.Name">
             <summary>
-            Parses a string representation of a latitude and longitude
+            The name of the microformats format
             </summary>
-            <param name="latitude">Latitude string</param>
-            <param name="longitude">Longitude string</param>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.ToString">
+        <member name="P:UfXtract.UfElementDescriber.CompoundName">
             <summary>
-            Returns a canonicalised geo string representation
+            The compound name this is used to build compound structrues ie vcard and reviewer in hreview
             </summary>
-            <returns>String of latitude and longitude separated by ;</returns>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.GetCanonicalisedLatitude">
+        <member name="P:UfXtract.UfElementDescriber.CompoundAttribute">
             <summary>
-            Get a canonicalised string representation of the latitude
+            The compound attribute this is used to build compound structrues ie vcard and reviewer in hreview
             </summary>
-            <returns>String of latitude</returns>
         </member>
-        <member name="M:UfXtract.Utilities.Geo.GetCanonicalisedLongitude">
+        <member name="P:UfXtract.UfElementDescriber.Description">
             <summary>
-            Get a canonicalised string representation of the longitude
+            The description of the microformats format
             </summary>
-            <returns>String of longitude</returns>
         </member>
-        <member name="P:UfXtract.Utilities.Geo.Latitude">
+        <member name="P:UfXtract.UfElementDescriber.Attribute">
             <summary>
-            Gets and sets the latitude
+            The element attribute to search on ie class, rel or rev
             </summary>
         </member>
-        <member name="P:UfXtract.Utilities.Geo.Longitude">
+        <member name="P:UfXtract.UfElementDescriber.Mandatory">
             <summary>
-            Gets and sets the longitude
+            Is the element mandatory
             </summary>
         </member>
-        <member name="T:UfXtract.UfWebPage">
+        <member name="P:UfXtract.UfElementDescriber.Multiples">
             <summary>
-            UfWebPage
+            Allow multiple instances of element
+            Sets concatenate values flag to false
             </summary>
         </member>
-        <member name="M:UfXtract.UfWebPage.Load(System.Uri)">
+        <member name="P:UfXtract.UfElementDescriber.RootElement">
             <summary>
-            Load the web page from a Uri
+            Marks the top most element in a format description
             </summary>
         </member>
-        <member name="T:UfXtract.UfErrors">
+        <member name="P:UfXtract.UfElementDescriber.ConcatenateValues">
             <summary>
-            Collection of UfError objects.
+            Allow multiple instances to be concatenate in to a single value.
+            Sets multiples flag to false
             </summary>
         </member>
-        <member name="T:UfXtract.UfError">
+        <member name="P:UfXtract.UfElementDescriber.Type">
             <summary>
-            UfError object
+            The type of properties to return
             </summary>
         </member>
-        <member name="T:UfXtract.UfDataToString">
+        <member name="P:UfXtract.UfElementDescriber.NodeType">
             <summary>
-            Converts a UfDataNode into a string with a indented tree structure.
+            The type node 
             </summary>
         </member>
-        <member name="M:UfXtract.UfDataToString.#ctor">
+        <member name="P:UfXtract.UfElementDescriber.AllowedTags">
             <summary>
-            Converts a UfDataNode into a string with a indented tree structure.
+            A list of Html tags to restrict the parse to. If empty it will use all tags
             </summary>
         </member>
-        <member name="M:UfXtract.UfDataToString.Convert(UfXtract.UfDataNode)">
-            <returns>String with indented tree structure</returns>
-        </member>
-        <member name="M:UfXtract.UfDataToString.BuildDataString(System.String,UfXtract.UfDataNode,System.Int32)">
-            <summary>
-            Build a string from data
-            </summary>
-            <param name="output">Allows for method to call itself</param>
-            <param name="node">The data object</param>
-            <param name="indent">Current indent</param>
-            <returns></returns>
-        </member>
-        <member name="P:UfXtract.UfDataToString.HierarchalTree">
-            <summary>
-            Weather data tree structure uses hierarchal to display multiples
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfDataToString.Errors">
-            <summary>
-            Collection of error information fro reporting
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfDataToString.Urls">
-            <summary>
-            Collection of Url information for reporting
-            </summary>
-        </member>
-        <member name="T:UfXtract.Utilities.PhoneNumber">
-            <summary>
-            Utility for the canonicalisation of telephone numbers
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.PhoneNumber.#ctor">
-            <summary>
-            Utility for the canonicalisation of telephone numbers
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.PhoneNumber.#ctor(System.String)">
-            <summary>
-            Utility for the canonicalisation of telephone numbers
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.PhoneNumber.Parse(System.String)">
-            <summary>
-            Parses a string representation of a telephone number
-            </summary>
-            <param name="telephoneNumber">The telephone number</param>
-        </member>
-        <member name="M:UfXtract.Utilities.PhoneNumber.ToString">
-            <summary>
-            Returns a canonicalised version of the telephone number 
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:UfXtract.Utilities.PhoneNumber.Raw">
-            <summary>
-            Get the raw text version of the telephone number
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.PhoneNumber.Canonicalised">
-            <summary>
-            Gets the canonicalised version of the telephone number 
-            </summary>
-        </member>
-        <member name="T:UfXtract.Urls">
-            <summary>
-            Collection of Url objects
-            </summary>
-        </member>
-        <member name="T:UfXtract.Url">
-            <summary>
-            Url object
-            </summary>
-        </member>
-        <member name="M:UfXtract.Url.ParseAddress(System.String)">
-            <summary>
-            Try to find any non file based resouce that
-            does not end with / and adds it.
-            </summary>
-        </member>
-        <member name="P:UfXtract.Url.Address">
-            <summary>
-            The Url addresss
-            </summary>
-        </member>
-        <member name="P:UfXtract.Url.Domain">
-            <summary>
-            The Url domain name (uri.Authority)
-            </summary>
-        </member>
-        <member name="P:UfXtract.Url.Status">
-            <summary>
-            The Http status number
-            </summary>
-        </member>
-        <member name="P:UfXtract.Url.LoadTime">
-            <summary>
-            The Url load time
-            </summary>
-        </member>
-        <member name="P:UfXtract.Url.HtmlPageTitle">
-            <summary>
-            The Html page title
-            </summary>
-        </member>
-        <member name="P:UfXtract.Url.Uri">
-            <summary>
-            The Uri
-            </summary>
-        </member>
-        <member name="T:UfXtract.Utilities.ISODuration">
-            <summary>
-            ISO 8601 duration structure and conversion class
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.ISODuration.#ctor">
-            <summary>
-            ISO 8601 duration structure and conversion class
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.ISODuration.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
-            <summary>
-            ISO 8601 duration structure and conversion class
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.ISODuration.Reset">
-            <summary>
-            Resets all the properties
-            </summary>
-        </member>
-        <member name="M:UfXtract.Utilities.ISODuration.Parse(System.String)">
-            <summary>
-            Parses a string representation of a ISO 8601 duration
-            </summary>
-            <param name="datetime">ISO 8601 duration</param>
-        </member>
-        <member name="M:UfXtract.Utilities.ISODuration.AddToDate(System.DateTime)">
-            <summary>
-            Adds the cuurent duration to a date
-            </summary>
-            <param name="startDate">The start date</param>
-            <returns>The date with the added duration</returns>
-        </member>
-        <member name="M:UfXtract.Utilities.ISODuration.ToString">
-            <summary>
-            Returns a ISO 8601 string representation of a duration
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Years">
-            <summary>
-            Gets and sets the number of years
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Months">
-            <summary>
-            Gets and sets the number of months
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Weeks">
-            <summary>
-            Gets and sets the number of weeks
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Days">
-            <summary>
-            Gets and sets the number of days
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Hours">
-            <summary>
-            Gets and sets the number of hours
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Minutes">
-            <summary>
-            Gets and sets the number of minutes
-            </summary>
-        </member>
-        <member name="P:UfXtract.Utilities.ISODuration.Seconds">
-            <summary>
-            Gets and sets the number of seconds
-            </summary>
-        </member>
-        <member name="T:UfXtract.UfDataToXml">
-            <summary>
-            Converts a UfDataNode structure into XML
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfDataToXml.#ctor">
-            <summary>
-            Converts a UfDataNode structure into XML
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfDataToXml.Convert(UfXtract.UfDataNode,System.IO.Stream)">
-            <summary>
-            Converts a UfDataNode structure into XML
-            </summary>
-            <param name="node">Node</param>
-            <param name="stream">Stream XML is added to</param>
-        </member>
-        <member name="M:UfXtract.UfDataToXml.Convert(UfXtract.UfDataNode,System.IO.TextWriter)">
-            <summary>
-            Converts a UfDataNode structure into XML
-            </summary>
-            <param name="node">Node</param>
-            <param name="Writer">Text writer</param>
-        </member>
-        <member name="P:UfXtract.UfDataToXml.Errors">
-            <summary>
-            Collection of error information for reporting
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfDataToXml.Urls">
-            <summary>
-            Collection of Url information for reporting
-            </summary>
-        </member>
-        <member name="T:UfXtract.XmlToUfData">
-            <summary>
-            Converts a UfXtract XML structure into UfDataNode structure
-            </summary>
-        </member>
-        <member name="M:UfXtract.XmlToUfData.#ctor">
-            <summary>
-            Converts a UfXtract JSON structure into UfDataNode structure
-            </summary>
-        </member>
-        <member name="M:UfXtract.XmlToUfData.Convert(System.String)">
-            <summary>
-            Converts a UfXtract JSON structure into UfDataNode structure
-            </summary>
-            <param name="xml">XML string</param>
-            <returns>UfDataNode</returns>
-        </member>
-        <member name="M:UfXtract.XmlToUfData.Convert(System.Xml.XmlDocument)">
-            <summary>
-            Converts a UfXtract JSON structure into UfDataNode structure
-            </summary>
-            <param name="xmlDocument">XmlDocument</param>
-            <returns>UfDataNode</returns>
-        </member>
-        <member name="T:UfXtract.UfParse">
-            <summary>
-            The main parser functions.
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfParse.Load(System.String,UfXtract.UfFormatDescriber)">
-            <summary>
-            Load and parse a Html string.
-            </summary>
-            <param name="htmlString">Html string</param>
-            <param name="url">A Url for relative path operations</param>
-            <param name="formatDescriber">The microformat format describer</param>
-        </member>
-        <member name="M:UfXtract.UfParse.Load(HtmlAgilityPack.HtmlDocument,UfXtract.UfFormatDescriber)">
-            <summary>
-            Load and parse a Html document.
-            </summary>
-            <param name="document">HtmlAgilityPack Htmldocument object</param>
-            <param name="formatDescriber">The microformat format describer</param>
-        </member>
-        <member name="M:UfXtract.UfParse.Load(System.String,System.String,UfXtract.UfFormatDescriber)">
-            <summary>
-            Load and parse a Html string.
-            </summary>
-            <param name="htmlString">Html string</param>
-            <param name="url">A Url for relative path operations</param>
-            <param name="formatDescriber">The microformat format describer</param>
-        </member>
-        <member name="M:UfXtract.UfParse.Load(HtmlAgilityPack.HtmlDocument,System.String,UfXtract.UfFormatDescriber)">
-            <summary>
-            Load and parse a Html document.
-            </summary>
-            <param name="document">HtmlAgilityPack Htmldocument object</param>
-            <param name="url">The source Url of the document</param>
-            <param name="formatDescriber">The microformat format describer</param>
-        </member>
-        <member name="M:UfXtract.UfParse.HasCompound(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode,System.Boolean)">
-            <summary>
-            Finds compound uf between parent containing node and found reference node
-            </summary>
-            <param name="containingNode"></param>
-            <param name="node"></param>
-            <param name="hasCompound"></param>
-            <returns></returns>
-        </member>
-        <member name="M:UfXtract.UfParse.AddNewDateNode(HtmlAgilityPack.HtmlNode,UfXtract.UfDataNode,UfXtract.UfDataNode,UfXtract.UfElementDescriber)">
-            <summary>
-            Adds a new data node to the tree
-            </summary>
-            <param name="ufData">Parent node</param>
-            <param name="ufNewDataNode">Node to be added</param>
-            <param name="ufElement">The uF element describer</param>
-        </member>
-        <member name="M:UfXtract.UfParse.GetNodeValue(HtmlAgilityPack.HtmlNode)">
-            <summary>
-            Returns the text value of a node
-            </summary>
-            <param name="node">HtmlAgilityPack html node</param>
-        </member>
-        <member name="M:UfXtract.UfParse.GetAttributeValue(HtmlAgilityPack.HtmlNode,System.String)">
-            <summary>
-            Returns the value of a given node attribute
-            </summary>
-            <param name="node">HtmlAgilityPack html node</param>
-            <param name="attName">The attribute name</param>
-        </member>
-        <member name="P:UfXtract.UfParse.Url">
-            <summary>
-            Gets and sets the Url of the document been parsed
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfParse.UrlBase">
-            <summary>
-            Gets and sets the base Url of the document been parsed as definded in a basehref tag
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfParse.FormatDescriber">
-            <summary>
-            Gets and sets the microformats format describer 
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfParse.Data">
+        <member name="P:UfXtract.UfElementDescriber.Elements">
             <summary>
-            Gets and sets the resulting data structure from a parse 
+            The child elements of this element
             </summary>
         </member>
-        <member name="P:UfXtract.UfParse.HtmlPageTitle">
+        <member name="P:UfXtract.UfElementDescriber.AttributeValues">
             <summary>
-            Gets the Html page title
+            The child attribute values of this element
             </summary>
         </member>
-        <member name="T:UfXtract.Utilities.XmlConformWriter">
+        <member name="T:UfXtract.UfElementDescribers">
             <summary>
-            Derived from XmlTextWriter class. Overrides the WriteString and WriteStartElement methods.
+            An elements collection.
             </summary>
         </member>
         <member name="T:UfXtract.UfDataNodes">
@@ -519,24 +208,6 @@
             <summary>
             Stores a list of all the parent uf element node names
             </summary>
-        </member>
-        <member name="T:UfXtract.UfDataToMachineHtml">
-            <summary>
-            Converts a UfDataNode structure into a very basic form HTML.
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfDataToMachineHtml.#ctor">
-            <summary>
-            Converts a UfDataNode structure into a very basic form HTML.
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfDataToMachineHtml.Convert(UfXtract.UfDataNode,UfXtract.UfFormatDescriber)">
-            <summary>
-            Converts a UfDataNode structure into a very basic form HTML.
-            </summary>
-            <param name="node">Node</param>
-            <param name="formatDescriber">Microformat format describer object</param>
-            <returns>HTML string</returns>
         </member>
         <member name="T:UfXtract.Utilities.ISODateTime">
             <summary>
@@ -662,108 +333,90 @@
             Set current profile to W3CNoteDateTime
             </summary>
         </member>
-        <member name="T:UfXtract.UfDataToJson">
+        <member name="T:UfXtract.Utilities.Geo">
             <summary>
-            Converts a UfDataNode structure into JSON
+            Geo structure and conversion class
             </summary>
         </member>
-        <member name="M:UfXtract.UfDataToJson.#ctor">
+        <member name="M:UfXtract.Utilities.Geo.#ctor">
             <summary>
-            Converts a UfDataNode structure into JSON
+            Geo structure and conversion
             </summary>
         </member>
-        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,UfXtract.UfFormatDescriber,System.String)">
+        <member name="M:UfXtract.Utilities.Geo.#ctor(System.Decimal,System.Decimal)">
             <summary>
-            Converts a UfDataNode structure into JSON
+            Geo structure and conversion
             </summary>
-            <param name="node">Node</param>
-            <param name="formatDescriber">Microformat format describer object</param>
-            <param name="callBack">JSONP callback function name to wrap JSON object</param>
-            <returns>JSON string</returns>
+            <param name="latitude">latitude</param>
+            <param name="longitude">longitude</param>
         </member>
-        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,System.Collections.ArrayList)">
+        <member name="M:UfXtract.Utilities.Geo.#ctor(System.String)">
             <summary>
-            Converts a UfDataNode structure into JSON
+            Geo structure and conversion
             </summary>
-            <param name="node">Node</param>
-            <param name="formatArray">Array of microformat format describer to describer data in node</param>
-            <returns>JSON string</returns>
+            <param name="geo">Geo as ; delimited string ie 37.77;-122.41</param>
         </member>
-        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,System.Collections.ArrayList,System.String)">
+        <member name="M:UfXtract.Utilities.Geo.Reset">
             <summary>
-            Converts a UfDataNode structure into JSON
-            </summary>
-            <param name="node">Node</param>
-            <param name="formatArray">Array of microformat format describer to describer data in node</param>
-            <param name="callBack">JSONP callback function name to wrap JSON object</param>
-            <returns>JSON string</returns>
-        </member>
-        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,UfXtract.UfFormatDescriber)">
-            <summary>
-            Converts a UfDataNode structure into JSON
-            </summary>
-            <param name="node">Node</param>
-            <param name="formatDescriber">Microformat format describer object</param>
-            <returns>JSON string</returns>
-        </member>
-        <member name="M:UfXtract.UfDataToJson.EncodeJsonText(System.String)">
-            <summary>
-            Encodes text so that it can be used in Json
+            Resets all the properties
             </summary>
         </member>
-        <member name="M:UfXtract.UfDataToJson.IsNumeric(System.String)">
+        <member name="M:UfXtract.Utilities.Geo.Parse(System.String)">
             <summary>
-            Is the string a number
+            Parses a string representation of a geo
+            </summary>
+            <param name="geo">Geo as ; delimited string ie 37.77;-122.41</param>
+        </member>
+        <member name="M:UfXtract.Utilities.Geo.FormatNumber(System.String)">
+            <summary>
+            Remove trailing zeros and decimal points from string representation of a number.
+            </summary>
+            <param name="number">Number</param>
+            <returns>Number</returns>
+        </member>
+        <member name="M:UfXtract.Utilities.Geo.Parse(System.String,System.String)">
+            <summary>
+            Parses a string representation of a latitude and longitude
+            </summary>
+            <param name="latitude">Latitude string</param>
+            <param name="longitude">Longitude string</param>
+        </member>
+        <member name="M:UfXtract.Utilities.Geo.ToString">
+            <summary>
+            Returns a canonicalised geo string representation
+            </summary>
+            <returns>String of latitude and longitude separated by ;</returns>
+        </member>
+        <member name="M:UfXtract.Utilities.Geo.GetCanonicalisedLatitude">
+            <summary>
+            Get a canonicalised string representation of the latitude
+            </summary>
+            <returns>String of latitude</returns>
+        </member>
+        <member name="M:UfXtract.Utilities.Geo.GetCanonicalisedLongitude">
+            <summary>
+            Get a canonicalised string representation of the longitude
+            </summary>
+            <returns>String of longitude</returns>
+        </member>
+        <member name="P:UfXtract.Utilities.Geo.Latitude">
+            <summary>
+            Gets and sets the latitude
             </summary>
         </member>
-        <member name="P:UfXtract.UfDataToJson.Errors">
+        <member name="P:UfXtract.Utilities.Geo.Longitude">
             <summary>
-            Collection of error information fro reporting
+            Gets and sets the longitude
             </summary>
         </member>
-        <member name="P:UfXtract.UfDataToJson.Urls">
+        <member name="T:UfXtract.UfErrors">
             <summary>
-            Collection of Url information for reporting
+            Collection of UfError objects.
             </summary>
         </member>
-        <member name="T:UfXtract.JsonToUfData">
+        <member name="T:UfXtract.UfError">
             <summary>
-            Converts a UfXtract JSON structure into UfDataNode structure
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.#ctor">
-            <summary>
-            Converts a UfXtract JSON structure into UfDataNode structure
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.Convert(System.String)">
-            <summary>
-            Converts a UfXtract JSON structure into UfDataNode structure
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.CreateArray(UfXtract.UfDataNode,Newtonsoft.Json.JsonReader,System.String)">
-            <summary>
-            Takes a JSON array and add child UfDataNode nodes to parent
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.CreateObject(UfXtract.UfDataNode,Newtonsoft.Json.JsonReader,System.String)">
-            <summary>
-            Takes a JSON object and add child UfDataNode node to parent
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.AddString(UfXtract.UfDataNode,System.String,System.Object)">
-            <summary>
-            Takes a JSON string and add child UfDataNode node to parent
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.CleanData(UfXtract.UfDataNode)">
-            <summary>
-            Removes empty nodes from data tree
-            </summary>
-        </member>
-        <member name="M:UfXtract.JsonToUfData.CleanDataNode(UfXtract.UfDataNode,UfXtract.UfDataNode)">
-            <summary>
-            Removes empty node from data tree
+            UfError object
             </summary>
         </member>
         <member name="T:UfXtract.GenericSort">
@@ -786,220 +439,60 @@
             <param name="y">Second object</param>
             <returns></returns>
         </member>
-        <member name="T:UfXtract.UfFormatDescriber">
+        <member name="T:UfXtract.UfWebRequest">
             <summary>
-            Microformats format description
+            Loads a webpage and parse the results
             </summary>
         </member>
-        <member name="M:UfXtract.UfFormatDescriber.#ctor">
+        <member name="M:UfXtract.UfWebRequest.#ctor">
             <summary>
-            Microformats format description
+            Loads a webpage and parse the results
             </summary>
         </member>
-        <member name="P:UfXtract.UfFormatDescriber.Name">
+        <member name="M:UfXtract.UfWebRequest.Load(System.String,UfXtract.UfFormatDescriber)">
             <summary>
-            The name of the microformats formet
+            Loads a single Html pages and does a microformat parse
+            </summary>
+            <param name="url">The Url of the webpage to be pasred</param>
+            <param name="formatDescriber">A format describer for microformat to be parsed</param>
+        </member>
+        <member name="M:UfXtract.UfWebRequest.Load(System.String,System.Collections.ArrayList)">
+            <summary>
+            Loads a single Html pages and runs multiple microformat parses
+            </summary>
+            <param name="url">A full web page address</param>
+            <param name="formatDescriberArray">An array of format describers</param>
+        </member>
+        <member name="M:UfXtract.UfWebRequest.LoadHtmlDoc(System.String)">
+            <summary>
+            Load a exteranl html document using webPage
+            </summary>
+            <param name="url">A full web page address</param>
+            <returns></returns>
+        </member>
+        <member name="P:UfXtract.UfWebRequest.UserAgent">
+            <summary>
+            The useragent string to use for request. Default is Firefox 3.6
             </summary>
         </member>
-        <member name="P:UfXtract.UfFormatDescriber.Description">
+        <member name="P:UfXtract.UfWebRequest.Urls">
             <summary>
-            The description of the microformats formet
+            Collection of parsed Urls
             </summary>
         </member>
-        <member name="P:UfXtract.UfFormatDescriber.BaseElement">
+        <member name="P:UfXtract.UfWebRequest.Data">
             <summary>
-            The base element
-            </summary> 
-        </member>
-        <member name="P:UfXtract.UfFormatDescriber.Type">
-            <summary>
-            The type of microformats format
+            The resulting data structure from a parse 
             </summary>
         </member>
-        <member name="T:UfXtract.UfFormatDescriber.FormatTypes">
+        <member name="P:UfXtract.UfWebRequest.FormatDescriber">
             <summary>
-            Microformats format type
+            The FormatDescriber used for single parse
             </summary>
         </member>
-        <member name="T:UfXtract.UfElementDescriber">
+        <member name="P:UfXtract.UfWebRequest.FormatDescriberArray">
             <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfElementDescriber.#ctor">
-            <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean)">
-            <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-            <param name="name">Element name</param>
-            <param name="mandatory">Is mandatory</param>
-            <param name="multiples">Allow multiples</param>
-        </member>
-        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,UfXtract.UfElementDescriber.PropertyTypes)">
-            <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-            <param name="name">Element name</param>
-            <param name="mandatory">Is mandatory</param>
-            <param name="multiples">Allow multiples</param>
-            <param name="type">Property type</param>
-        </member>
-        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,UfXtract.UfElementDescriber.PropertyTypes)">
-            <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-            <param name="name">Element name</param>
-            <param name="mandatory">Is mandatory</param>
-            <param name="multiples">Allow multiples</param>
-            <param name="concatenateValues">Concatenate multiple text values together</param>
-            <param name="type">Property type</param>
-        </member>
-        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,System.String)">
-            <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-            <param name="name">Element name</param>
-            <param name="mandatory">Is mandatory</param>
-            <param name="multiples">Allow multiples</param>
-            <param name="typevalues">Comma delimited list of allow values</param>
-        </member>
-        <member name="M:UfXtract.UfElementDescriber.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,System.String)">
-            <summary>
-            Describers the use of HTML element (tag), as part of microformat format description
-            </summary>
-            <param name="name">Element name</param>
-            <param name="mandatory">Is mandatory</param>
-            <param name="multiples">Allow multiples</param>
-            <param name="concatenateValues">Concatenate multiple text values together</param>
-            <param name="typevalues">Comma delimited list of allow values</param>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Name">
-            <summary>
-            The name of the microformats format
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.CompoundName">
-            <summary>
-            The compound name this is used to build compound structrues ie vcard and reviewer in hreview
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.CompoundAttribute">
-            <summary>
-            The compound attribute this is used to build compound structrues ie vcard and reviewer in hreview
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Description">
-            <summary>
-            The description of the microformats format
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Attribute">
-            <summary>
-            The element attribute to search on ie class, rel or rev
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Mandatory">
-            <summary>
-            Is the element mandatory
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Multiples">
-            <summary>
-            Allow multiple instances of element
-            Sets concatenate values flag to false
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.ConcatenateValues">
-            <summary>
-            Allow multiple instances to be concatenate in to a single value.
-            Sets multiples flag to false
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Type">
-            <summary>
-            The type of properties to return
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.NodeType">
-            <summary>
-            The type node 
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.AllowedTags">
-            <summary>
-            A list of Html tags to restrict the parse to. If empty it will use all tags
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.Elements">
-            <summary>
-            The child elements of this element
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfElementDescriber.AttributeValues">
-            <summary>
-            The child attribute values of this element
-            </summary>
-        </member>
-        <member name="T:UfXtract.UfElementDescribers">
-            <summary>
-            An elements collection.
-            </summary>
-        </member>
-        <member name="T:UfXtract.UfAttributeValueDescriber">
-            <summary>
-            Describers the use of HTML attribute, as part of microformat format description
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfAttributeValueDescriber.#ctor">
-            <summary>
-            Describers the use of HTML attribute, as part of microformat format description
-            </summary>
-        </member>
-        <member name="M:UfXtract.UfAttributeValueDescriber.#ctor(System.String)">
-            <summary>
-            Describers the use of HTML attribute, as part of microformat format description
-            </summary>
-            <param name="name">Attribute name</param>
-        </member>
-        <member name="M:UfXtract.UfAttributeValueDescriber.#ctor(System.String,System.String)">
-            <summary>
-            Describers the use of HTML attribute, as part of microformat format description
-            </summary>
-            <param name="name">Attribute name</param>
-            <param name="excludeValues">Space delimited list of excluded attribute values</param>
-        </member>
-        <member name="P:UfXtract.UfAttributeValueDescriber.Name">
-            <summary>
-            The name of the microformats format
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfAttributeValueDescriber.Description">
-            <summary>
-            The description of the microformats format
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfAttributeValueDescriber.Mandatory">
-            <summary>
-            Is the attribute value mandatory
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfAttributeValueDescriber.Multiples">
-            <summary>
-            Allow multiple instances of attribute value
-            </summary>
-        </member>
-        <member name="P:UfXtract.UfAttributeValueDescriber.ExcludeValues">
-            <summary>
-            Array of excludes the values
-            </summary>
-        </member>
-        <member name="T:UfXtract.uFAttributeValueDescribers">
-            <summary>
-            An elements collection.
+            The FormatDescriber used for single parse
             </summary>
         </member>
         <member name="T:UfXtract.UfHelpers">
@@ -1109,60 +602,568 @@
             <param name="url">Url</param>
             <returns>Tag</returns>
         </member>
-        <member name="T:UfXtract.UfWebRequest">
+        <member name="T:UfXtract.UfDataToMachineHtml">
             <summary>
-            Loads a webpage and parse the results
+            Converts a UfDataNode structure into a very basic form HTML.
             </summary>
         </member>
-        <member name="M:UfXtract.UfWebRequest.#ctor">
+        <member name="M:UfXtract.UfDataToMachineHtml.#ctor">
             <summary>
-            Loads a webpage and parse the results
+            Converts a UfDataNode structure into a very basic form HTML.
             </summary>
         </member>
-        <member name="M:UfXtract.UfWebRequest.Load(System.String,UfXtract.UfFormatDescriber)">
+        <member name="M:UfXtract.UfDataToMachineHtml.Convert(UfXtract.UfDataNode,UfXtract.UfFormatDescriber)">
             <summary>
-            Loads a single Html pages and does a microformat parse
+            Converts a UfDataNode structure into a very basic form HTML.
             </summary>
-            <param name="url">The Url of the webpage to be pasred</param>
-            <param name="formatDescriber">A format describer for microformat to be parsed</param>
+            <param name="node">Node</param>
+            <param name="formatDescriber">Microformat format describer object</param>
+            <returns>HTML string</returns>
         </member>
-        <member name="M:UfXtract.UfWebRequest.Load(System.String,System.Collections.ArrayList)">
+        <member name="T:UfXtract.Utilities.XmlConformWriter">
             <summary>
-            Loads a single Html pages and runs multiple microformat parses
+            Derived from XmlTextWriter class. Overrides the WriteString and WriteStartElement methods.
             </summary>
-            <param name="url">A full web page address</param>
-            <param name="formatDescriberArray">An array of format describers</param>
         </member>
-        <member name="M:UfXtract.UfWebRequest.LoadHtmlDoc(System.String)">
+        <member name="T:UfXtract.Urls">
             <summary>
-            Load a exteranl html document using webPage
+            Collection of Url objects
             </summary>
-            <param name="url">A full web page address</param>
+        </member>
+        <member name="T:UfXtract.Url">
+            <summary>
+            Url object
+            </summary>
+        </member>
+        <member name="M:UfXtract.Url.ParseAddress(System.String)">
+            <summary>
+            Try to find any non file based resouce that
+            does not end with / and adds it.
+            </summary>
+        </member>
+        <member name="P:UfXtract.Url.Address">
+            <summary>
+            The Url addresss
+            </summary>
+        </member>
+        <member name="P:UfXtract.Url.Domain">
+            <summary>
+            The Url domain name (uri.Authority)
+            </summary>
+        </member>
+        <member name="P:UfXtract.Url.Status">
+            <summary>
+            The Http status number
+            </summary>
+        </member>
+        <member name="P:UfXtract.Url.LoadTime">
+            <summary>
+            The Url load time
+            </summary>
+        </member>
+        <member name="P:UfXtract.Url.HtmlPageTitle">
+            <summary>
+            The Html page title
+            </summary>
+        </member>
+        <member name="P:UfXtract.Url.Uri">
+            <summary>
+            The Uri
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfDataToString">
+            <summary>
+            Converts a UfDataNode into a string with a indented tree structure.
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToString.#ctor">
+            <summary>
+            Converts a UfDataNode into a string with a indented tree structure.
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToString.Convert(UfXtract.UfDataNode)">
+            <returns>String with indented tree structure</returns>
+        </member>
+        <member name="M:UfXtract.UfDataToString.BuildDataString(System.String,UfXtract.UfDataNode,System.Int32)">
+            <summary>
+            Build a string from data
+            </summary>
+            <param name="output">Allows for method to call itself</param>
+            <param name="node">The data object</param>
+            <param name="indent">Current indent</param>
             <returns></returns>
         </member>
-        <member name="P:UfXtract.UfWebRequest.UserAgent">
+        <member name="P:UfXtract.UfDataToString.HierarchalTree">
             <summary>
-            The useragent string to use for request. Default is Firefox 3.6
+            Weather data tree structure uses hierarchal to display multiples
             </summary>
         </member>
-        <member name="P:UfXtract.UfWebRequest.Urls">
+        <member name="P:UfXtract.UfDataToString.Errors">
             <summary>
-            Collection of parsed Urls
+            Collection of error information fro reporting
             </summary>
         </member>
-        <member name="P:UfXtract.UfWebRequest.Data">
+        <member name="P:UfXtract.UfDataToString.Urls">
             <summary>
-            The resulting data structure from a parse 
+            Collection of Url information for reporting
             </summary>
         </member>
-        <member name="P:UfXtract.UfWebRequest.FormatDescriber">
+        <member name="T:UfXtract.Utilities.PhoneNumber">
             <summary>
-            The FormatDescriber used for single parse
+            Utility for the canonicalisation of telephone numbers
             </summary>
         </member>
-        <member name="P:UfXtract.UfWebRequest.FormatDescriberArray">
+        <member name="M:UfXtract.Utilities.PhoneNumber.#ctor">
             <summary>
-            The FormatDescriber used for single parse
+            Utility for the canonicalisation of telephone numbers
+            </summary>
+        </member>
+        <member name="M:UfXtract.Utilities.PhoneNumber.#ctor(System.String)">
+            <summary>
+            Utility for the canonicalisation of telephone numbers
+            </summary>
+        </member>
+        <member name="M:UfXtract.Utilities.PhoneNumber.Parse(System.String)">
+            <summary>
+            Parses a string representation of a telephone number
+            </summary>
+            <param name="telephoneNumber">The telephone number</param>
+        </member>
+        <member name="M:UfXtract.Utilities.PhoneNumber.ToString">
+            <summary>
+            Returns a canonicalised version of the telephone number 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:UfXtract.Utilities.PhoneNumber.Raw">
+            <summary>
+            Get the raw text version of the telephone number
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.PhoneNumber.Canonicalised">
+            <summary>
+            Gets the canonicalised version of the telephone number 
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfParse">
+            <summary>
+            The main parser functions.
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfParse.Load(System.String,UfXtract.UfFormatDescriber)">
+            <summary>
+            Load and parse a Html string.
+            </summary>
+            <param name="htmlString">Html string</param>
+            <param name="url">A Url for relative path operations</param>
+            <param name="formatDescriber">The microformat format describer</param>
+        </member>
+        <member name="M:UfXtract.UfParse.Load(HtmlAgilityPack.HtmlDocument,UfXtract.UfFormatDescriber)">
+            <summary>
+            Load and parse a Html document.
+            </summary>
+            <param name="document">HtmlAgilityPack Htmldocument object</param>
+            <param name="formatDescriber">The microformat format describer</param>
+        </member>
+        <member name="M:UfXtract.UfParse.Load(System.String,System.String,UfXtract.UfFormatDescriber)">
+            <summary>
+            Load and parse a Html string.
+            </summary>
+            <param name="htmlString">Html string</param>
+            <param name="url">A Url for relative path operations</param>
+            <param name="formatDescriber">The microformat format describer</param>
+        </member>
+        <member name="M:UfXtract.UfParse.Load(HtmlAgilityPack.HtmlDocument,System.String,UfXtract.UfFormatDescriber)">
+            <summary>
+            Load and parse a Html document.
+            </summary>
+            <param name="document">HtmlAgilityPack Htmldocument object</param>
+            <param name="url">The source Url of the document</param>
+            <param name="formatDescriber">The microformat format describer</param>
+        </member>
+        <member name="M:UfXtract.UfParse.HasCompound(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode,System.Boolean)">
+            <summary>
+            Finds compound uf between parent containing node and found reference node
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfParse.AddNewDateNode(HtmlAgilityPack.HtmlNode,UfXtract.UfDataNode,UfXtract.UfDataNode,UfXtract.UfElementDescriber)">
+            <summary>
+            Adds a new data node to the tree
+            </summary>
+            <param name="ufData">Parent node</param>
+            <param name="ufNewDataNode">Node to be added</param>
+            <param name="ufElement">The uF element describer</param>
+        </member>
+        <member name="M:UfXtract.UfParse.GetNodeValue(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns the text value of a node
+            </summary>
+            <param name="node">HtmlAgilityPack html node</param>
+        </member>
+        <member name="M:UfXtract.UfParse.GetAttributeValue(HtmlAgilityPack.HtmlNode,System.String)">
+            <summary>
+            Returns the value of a given node attribute
+            </summary>
+            <param name="node">HtmlAgilityPack html node</param>
+            <param name="attName">The attribute name</param>
+        </member>
+        <member name="P:UfXtract.UfParse.Url">
+            <summary>
+            Gets and sets the Url of the document been parsed
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfParse.UrlBase">
+            <summary>
+            Gets and sets the base Url of the document been parsed as definded in a basehref tag
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfParse.FormatDescriber">
+            <summary>
+            Gets and sets the microformats format describer 
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfParse.Data">
+            <summary>
+            Gets and sets the resulting data structure from a parse 
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfParse.HtmlPageTitle">
+            <summary>
+            Gets the Html page title
+            </summary>
+        </member>
+        <member name="T:UfXtract.Utilities.ISODuration">
+            <summary>
+            ISO 8601 duration structure and conversion class
+            </summary>
+        </member>
+        <member name="M:UfXtract.Utilities.ISODuration.#ctor">
+            <summary>
+            ISO 8601 duration structure and conversion class
+            </summary>
+        </member>
+        <member name="M:UfXtract.Utilities.ISODuration.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            ISO 8601 duration structure and conversion class
+            </summary>
+        </member>
+        <member name="M:UfXtract.Utilities.ISODuration.Reset">
+            <summary>
+            Resets all the properties
+            </summary>
+        </member>
+        <member name="M:UfXtract.Utilities.ISODuration.Parse(System.String)">
+            <summary>
+            Parses a string representation of a ISO 8601 duration
+            </summary>
+            <param name="datetime">ISO 8601 duration</param>
+        </member>
+        <member name="M:UfXtract.Utilities.ISODuration.AddToDate(System.DateTime)">
+            <summary>
+            Adds the cuurent duration to a date
+            </summary>
+            <param name="startDate">The start date</param>
+            <returns>The date with the added duration</returns>
+        </member>
+        <member name="M:UfXtract.Utilities.ISODuration.ToString">
+            <summary>
+            Returns a ISO 8601 string representation of a duration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Years">
+            <summary>
+            Gets and sets the number of years
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Months">
+            <summary>
+            Gets and sets the number of months
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Weeks">
+            <summary>
+            Gets and sets the number of weeks
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Days">
+            <summary>
+            Gets and sets the number of days
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Hours">
+            <summary>
+            Gets and sets the number of hours
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Minutes">
+            <summary>
+            Gets and sets the number of minutes
+            </summary>
+        </member>
+        <member name="P:UfXtract.Utilities.ISODuration.Seconds">
+            <summary>
+            Gets and sets the number of seconds
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfWebPage">
+            <summary>
+            UfWebPage
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfWebPage.Load(System.Uri)">
+            <summary>
+            Load the web page from a Uri
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfDataToJson">
+            <summary>
+            Converts a UfDataNode structure into JSON
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.#ctor">
+            <summary>
+            Converts a UfDataNode structure into JSON
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,UfXtract.UfFormatDescriber,System.String)">
+            <summary>
+            Converts a UfDataNode structure into JSON
+            </summary>
+            <param name="node">Node</param>
+            <param name="formatDescriber">Microformat format describer object</param>
+            <param name="callBack">JSONP callback function name to wrap JSON object</param>
+            <returns>JSON string</returns>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,System.Collections.ArrayList)">
+            <summary>
+            Converts a UfDataNode structure into JSON
+            </summary>
+            <param name="node">Node</param>
+            <param name="formatArray">Array of microformat format describer to describer data in node</param>
+            <returns>JSON string</returns>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,System.Collections.ArrayList,System.String)">
+            <summary>
+            Converts a UfDataNode structure into JSON
+            </summary>
+            <param name="node">Node</param>
+            <param name="formatArray">Array of microformat format describer to describer data in node</param>
+            <param name="callBack">JSONP callback function name to wrap JSON object</param>
+            <returns>JSON string</returns>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.Convert(UfXtract.UfDataNode,UfXtract.UfFormatDescriber)">
+            <summary>
+            Converts a UfDataNode structure into JSON
+            </summary>
+            <param name="node">Node</param>
+            <param name="formatDescriber">Microformat format describer object</param>
+            <returns>JSON string</returns>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.EncodeJsonText(System.String)">
+            <summary>
+            Encodes text so that it can be used in Json
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToJson.IsNumeric(System.String)">
+            <summary>
+            Is the string a number
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfDataToJson.Errors">
+            <summary>
+            Collection of error information fro reporting
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfDataToJson.Urls">
+            <summary>
+            Collection of Url information for reporting
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfFormatDescriber">
+            <summary>
+            Microformats format description
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfFormatDescriber.#ctor">
+            <summary>
+            Microformats format description
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfFormatDescriber.Name">
+            <summary>
+            The name of the microformats formet
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfFormatDescriber.Description">
+            <summary>
+            The description of the microformats formet
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfFormatDescriber.BaseElement">
+            <summary>
+            The base element
+            </summary> 
+        </member>
+        <member name="P:UfXtract.UfFormatDescriber.Type">
+            <summary>
+            The type of microformats format
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfFormatDescriber.FormatTypes">
+            <summary>
+            Microformats format type
+            </summary>
+        </member>
+        <member name="T:UfXtract.XmlToUfData">
+            <summary>
+            Converts a UfXtract XML structure into UfDataNode structure
+            </summary>
+        </member>
+        <member name="M:UfXtract.XmlToUfData.#ctor">
+            <summary>
+            Converts a UfXtract JSON structure into UfDataNode structure
+            </summary>
+        </member>
+        <member name="M:UfXtract.XmlToUfData.Convert(System.String)">
+            <summary>
+            Converts a UfXtract JSON structure into UfDataNode structure
+            </summary>
+            <param name="xml">XML string</param>
+            <returns>UfDataNode</returns>
+        </member>
+        <member name="M:UfXtract.XmlToUfData.Convert(System.Xml.XmlDocument)">
+            <summary>
+            Converts a UfXtract JSON structure into UfDataNode structure
+            </summary>
+            <param name="xmlDocument">XmlDocument</param>
+            <returns>UfDataNode</returns>
+        </member>
+        <member name="T:UfXtract.UfDataToXml">
+            <summary>
+            Converts a UfDataNode structure into XML
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToXml.#ctor">
+            <summary>
+            Converts a UfDataNode structure into XML
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfDataToXml.Convert(UfXtract.UfDataNode,System.IO.Stream)">
+            <summary>
+            Converts a UfDataNode structure into XML
+            </summary>
+            <param name="node">Node</param>
+            <param name="stream">Stream XML is added to</param>
+        </member>
+        <member name="M:UfXtract.UfDataToXml.Convert(UfXtract.UfDataNode,System.IO.TextWriter)">
+            <summary>
+            Converts a UfDataNode structure into XML
+            </summary>
+            <param name="node">Node</param>
+            <param name="Writer">Text writer</param>
+        </member>
+        <member name="P:UfXtract.UfDataToXml.Errors">
+            <summary>
+            Collection of error information for reporting
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfDataToXml.Urls">
+            <summary>
+            Collection of Url information for reporting
+            </summary>
+        </member>
+        <member name="T:UfXtract.UfAttributeValueDescriber">
+            <summary>
+            Describers the use of HTML attribute, as part of microformat format description
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfAttributeValueDescriber.#ctor">
+            <summary>
+            Describers the use of HTML attribute, as part of microformat format description
+            </summary>
+        </member>
+        <member name="M:UfXtract.UfAttributeValueDescriber.#ctor(System.String)">
+            <summary>
+            Describers the use of HTML attribute, as part of microformat format description
+            </summary>
+            <param name="name">Attribute name</param>
+        </member>
+        <member name="M:UfXtract.UfAttributeValueDescriber.#ctor(System.String,System.String)">
+            <summary>
+            Describers the use of HTML attribute, as part of microformat format description
+            </summary>
+            <param name="name">Attribute name</param>
+            <param name="excludeValues">Space delimited list of excluded attribute values</param>
+        </member>
+        <member name="P:UfXtract.UfAttributeValueDescriber.Name">
+            <summary>
+            The name of the microformats format
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfAttributeValueDescriber.Description">
+            <summary>
+            The description of the microformats format
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfAttributeValueDescriber.Mandatory">
+            <summary>
+            Is the attribute value mandatory
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfAttributeValueDescriber.Multiples">
+            <summary>
+            Allow multiple instances of attribute value
+            </summary>
+        </member>
+        <member name="P:UfXtract.UfAttributeValueDescriber.ExcludeValues">
+            <summary>
+            Array of excludes the values
+            </summary>
+        </member>
+        <member name="T:UfXtract.uFAttributeValueDescribers">
+            <summary>
+            An elements collection.
+            </summary>
+        </member>
+        <member name="T:UfXtract.JsonToUfData">
+            <summary>
+            Converts a UfXtract JSON structure into UfDataNode structure
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.#ctor">
+            <summary>
+            Converts a UfXtract JSON structure into UfDataNode structure
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.Convert(System.String)">
+            <summary>
+            Converts a UfXtract JSON structure into UfDataNode structure
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.CreateArray(UfXtract.UfDataNode,Newtonsoft.Json.JsonReader,System.String)">
+            <summary>
+            Takes a JSON array and add child UfDataNode nodes to parent
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.CreateObject(UfXtract.UfDataNode,Newtonsoft.Json.JsonReader,System.String)">
+            <summary>
+            Takes a JSON object and add child UfDataNode node to parent
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.AddString(UfXtract.UfDataNode,System.String,System.Object)">
+            <summary>
+            Takes a JSON string and add child UfDataNode node to parent
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.CleanData(UfXtract.UfDataNode)">
+            <summary>
+            Removes empty nodes from data tree
+            </summary>
+        </member>
+        <member name="M:UfXtract.JsonToUfData.CleanDataNode(UfXtract.UfDataNode,UfXtract.UfDataNode)">
+            <summary>
+            Removes empty node from data tree
             </summary>
         </member>
     </members>

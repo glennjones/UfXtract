@@ -26,6 +26,7 @@ namespace UfXtract
         private bool mandatory = false;
         private bool multiples = false;
         private bool concatenateValues = false;
+        private bool rootElement = false;
         private ArrayList allowedTags = new ArrayList();
         private PropertyTypes type = PropertyTypes.UrlTextAttribute;
         private StructureTypes structureTypes = StructureTypes.NonStructural; 
@@ -198,6 +199,16 @@ namespace UfXtract
                     this.ConcatenateValues = false;
                 multiples = value; 
             }
+        }
+
+        /// <summary>
+        /// Marks the top most element in a format description
+        /// </summary>
+        [XmlElement("root-element")]
+        public bool RootElement
+        {
+            get { return rootElement; }
+            set {rootElement = value; }
         }
 
         /// <summary>

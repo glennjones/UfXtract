@@ -17,7 +17,7 @@ public class test_hCalendar_2
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar2.htm
 // hCalendar 2 - multiple occurrence test
 // This page was design to test that values of a hCalendar which are meant to have multiple occurrences are parsed correctly.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCalendar_11
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar11.htm
 // hCalendar 11 - extracting contact test
 // This page was design to test the extracting organizer and attendee information from hCalendar. Mainly that these properties are parsed as hCards.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

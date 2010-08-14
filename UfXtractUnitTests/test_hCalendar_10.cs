@@ -17,7 +17,7 @@ public class test_hCalendar_10
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar10.htm
 // hCalendar 10 - extracting contact test
 // This page was design to test the extracting contact information from hCalendar. The test includes those elements of hCard most likely to be used as contact information for a event
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCard_13
 // http://www.ufxtract.com/testsuite/hcard/hcard13.htm
 // hCard 13 - object element test
 // This page was design to test the use of the object element. The IsEqualToPhoneNumber method canonicalises and compares phone numbers.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

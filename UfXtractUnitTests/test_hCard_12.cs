@@ -17,7 +17,7 @@ public class test_hCard_12
 // http://www.ufxtract.com/testsuite/hcard/hcard12.htm
 // hCard 12 - abbr (abbreviation) element test
 // This page was design to comprehensively test the use of the abbreviation element.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCalendar_5
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar5.htm
 // hCalendar 5 - extracting rdate repeated event test
 // This page test that parsers can extract rdate from different structures.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

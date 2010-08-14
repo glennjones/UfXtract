@@ -65,3 +65,18 @@ C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractU
 C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\bin\Debug\HtmlAgilityPack.dll
 C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\bin\Debug\HtmlAgilityPack.pdb
 C:\Documents and Settings\gjones\My Documents\Projects\ufXtractLibrary\ufXtractUnitTests\bin\Debug\HtmlAgilityPack.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\UfXtractUnitTests.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\UfXtractUnitTests.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\UfXtract.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\HtmlAgilityPack.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\UfXtract.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\UfXtract.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\HtmlAgilityPack.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\HtmlAgilityPack.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\Newtonsoft.Json.pdb
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\bin\Debug\Newtonsoft.Json.xml
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\obj\Debug\UfXtractUnitTests.dll
+C:\Documents and Settings\gjones\UfXtract\ufXtractUnitTests\obj\Debug\UfXtractUnitTests.pdb

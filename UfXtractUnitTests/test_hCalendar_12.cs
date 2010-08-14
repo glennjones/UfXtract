@@ -17,7 +17,7 @@ public class test_hCalendar_12
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar12.htm
 // hCalendar 12 - table header and axis include pattern
 // This page was design to test the table header and axis include pattern for hCalendar. This test uses a real life example from Hackday London 07.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

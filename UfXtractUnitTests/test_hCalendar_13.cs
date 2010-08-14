@@ -17,7 +17,7 @@ public class test_hCalendar_13
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar13.htm
 // hCalendar 13 - different location structures
 // This page was design to test the different type of possilbe location structures within hCalandar. A location can be either a string, hCard, adr or geo.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

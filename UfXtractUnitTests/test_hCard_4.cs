@@ -17,7 +17,7 @@ public class test_hCard_4
 // http://www.ufxtract.com/testsuite/hcard/hcard4.htm
 // hCard 4 - n (name) singular and multiple occurrence test
 // This page was design to test singular and multiple occurrence values in the n element of a hcard.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

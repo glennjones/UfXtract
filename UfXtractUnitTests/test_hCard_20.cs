@@ -17,7 +17,7 @@ public class test_hCard_20
 // http://www.ufxtract.com/testsuite/hcard/hcard20.htm
 // hCard 20 - hyperlink include test
 // This page was design to test the hyperlink include pattern. http://microformats.org/wiki/include-pattern.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

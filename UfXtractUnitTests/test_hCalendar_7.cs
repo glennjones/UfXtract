@@ -17,7 +17,7 @@ public class test_hCalendar_7
 // http://www.ufxtract.com/testsuite/hcalendar/hcalendar7.htm
 // hCalendar 7 - ISO date format test - RFC 3339 profile
 // This page was design to partial test the use of the RFC 3339 profile. It extends the tests on page 10. The IsEqualToISODate method normalisation and compares dates.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;

@@ -17,7 +17,7 @@ public class test_hCard_3
 // http://www.ufxtract.com/testsuite/hcard/hcard3.htm
 // hCard 3 - adr (address) singular and multiple occurrence test
 // This page was design to test singular and multiple occurrence values in the adr element of a hcard.
-// Built: 21 July 2010
+// Built: 14 August 2010
  
 UfWebRequest webRequest;
 UfDataNodes nodes;
