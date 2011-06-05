@@ -554,11 +554,22 @@ namespace UfXtract
             string tag = "";
             if (!string.IsNullOrEmpty(url))
             {
-                url = url.Trim().ToLower();
+                url = url.Trim();
+
+                // Find ? and remove querystring
+                int index2 = url.LastIndexOf("?");
+                if (index2 > 0)
+                    if (index2 != url.Length)
+                        url = url.Substring(0, index2);
+
+                // Find last / and get tag 
                 int index = url.LastIndexOf("/");
                 if (index > 0)
                     if (index != url.Length)
                         tag = url.Substring(index + 1, url.Length - 1 - index);
+
+
+
             }
             return tag;
         }
