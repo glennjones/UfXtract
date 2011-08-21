@@ -146,7 +146,7 @@
         </member>
         <member name="M:UfXtract.UfParse.IsDuplicateNode(UfXtract.UfDataNode,UfXtract.UfDataNode)">
             <summary>
-            Finds double entry or duplicate Node 
+            Finds double value entry
             This can happen as xPath will find the legal use of more than one class/rel attribute on a single element
             </summary>
             <param name="ufData">Parent node</param>
