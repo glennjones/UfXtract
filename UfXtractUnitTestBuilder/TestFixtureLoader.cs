@@ -147,6 +147,10 @@ namespace UfXtractUnitTestBuilder
                 stringBuilder.AppendLine("webRequest.Load(url, UfFormats.HCalendar());");
             if( format.ToLower() == "hresume")
                 stringBuilder.AppendLine("webRequest.Load(url, UfFormats.HResume());");
+            if (format.ToLower() == "hrecipe")
+                stringBuilder.AppendLine("webRequest.Load(url, UfFormats.HRecipe());");
+            if (format.ToLower() == "geo")
+                stringBuilder.AppendLine("webRequest.Load(url, UfFormats.Geo());");
 
 
             stringBuilder.AppendLine("nodes = webRequest.Data.Nodes;");

@@ -1,4 +1,5 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,6 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UfXtract.UnitTests</RootNamespace>
     <AssemblyName>UfXtractUnitTests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,7 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="test_Geo.cs" />
+    <Compile Include="test_geo_1.cs" />
+    <Compile Include="test_geo_2.cs" />
     <Compile Include="test_hCalendar_1.cs" />
     <Compile Include="test_hCalendar_10.cs" />
     <Compile Include="test_hCalendar_11.cs" />
@@ -75,6 +83,9 @@
     <Compile Include="test_hCard_8.cs" />
     <Compile Include="test_hCard_9.cs" />
     <Compile Include="test_hCard_99.cs" />
+    <Compile Include="test_hRecipe_1.cs" />
+    <Compile Include="test_hRecipe_2.cs" />
+    <Compile Include="test_hRecipe_3.cs" />
     <Compile Include="test_hResume_1.cs" />
     <Compile Include="test_hResume_2.cs" />
     <Compile Include="test_hResume_3.cs" />

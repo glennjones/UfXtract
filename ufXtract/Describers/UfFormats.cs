@@ -252,15 +252,15 @@ namespace UfXtract
             uFormat.BaseElement = new UfElementDescriber("hentry", true, true, UfElementDescriber.PropertyTypes.None);
 
             uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-title", true, false, UfElementDescriber.PropertyTypes.FormattedText));
-            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-content", false, false, UfElementDescriber.PropertyTypes.FormattedText));
-            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-summary", false, false, UfElementDescriber.PropertyTypes.FormattedText));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-content", false, true, UfElementDescriber.PropertyTypes.FormattedText));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-summary", false, true, UfElementDescriber.PropertyTypes.FormattedText));
             uFormat.BaseElement.Elements.Add(new UfElementDescriber("updated", false, false, UfElementDescriber.PropertyTypes.Date));
             uFormat.BaseElement.Elements.Add(new UfElementDescriber("published", false, false, UfElementDescriber.PropertyTypes.Date));
 
             UfFormatDescriber author = HCard();
             author.BaseElement.CompoundName = "author";
             author.BaseElement.CompoundAttribute = "class";
-            author.BaseElement.Multiples = false;
+            author.BaseElement.Multiples = true;
             uFormat.BaseElement.Elements.Add(author.BaseElement);
 
             uFormat.BaseElement.Elements.Add(Tag().BaseElement);
@@ -271,6 +271,107 @@ namespace UfXtract
 
             return uFormat;
         }
+
+
+        public static UfFormatDescriber HNewsItem()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "hentry";
+            uFormat.Description = "A entry or feed item gor hNews which supersets hAtom";
+            uFormat.Type = UfFormatDescriber.FormatTypes.Compound;
+            uFormat.BaseElement = new UfElementDescriber("hentry", true, true, UfElementDescriber.PropertyTypes.None);
+
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-title", true, false, UfElementDescriber.PropertyTypes.FormattedText));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-content", false, true, UfElementDescriber.PropertyTypes.FormattedText));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("entry-summary", false, true, UfElementDescriber.PropertyTypes.FormattedText));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("updated", false, false, UfElementDescriber.PropertyTypes.Date));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("published", false, false, UfElementDescriber.PropertyTypes.Date));
+
+            UfFormatDescriber author = HCard();
+            author.BaseElement.CompoundName = "author";
+            author.BaseElement.CompoundAttribute = "class";
+            author.BaseElement.Multiples = true;
+            uFormat.BaseElement.Elements.Add(author.BaseElement);
+
+            uFormat.BaseElement.Elements.Add(Tag().BaseElement);
+
+            UfFormatDescriber mk = Bookmark();
+            mk.BaseElement.Mandatory = true;
+            uFormat.BaseElement.Elements.Add(mk.BaseElement);
+
+            UfFormatDescriber sourceOrg = HCard();
+            sourceOrg.BaseElement.CompoundName = "source-org";
+            sourceOrg.BaseElement.CompoundAttribute = "class";
+            sourceOrg.BaseElement.Multiples = false;
+            sourceOrg.BaseElement.Mandatory = true;
+            uFormat.BaseElement.Elements.Add(sourceOrg.BaseElement);
+
+            UfFormatDescriber byline = HCard();
+            byline.BaseElement.CompoundName = "byline";
+            byline.BaseElement.CompoundAttribute = "class";
+            byline.BaseElement.Multiples = false;
+            uFormat.BaseElement.Elements.Add(byline.BaseElement);
+
+            uFormat.BaseElement.Elements.Add(Geo().BaseElement);
+            uFormat.BaseElement.Elements.Add(Principles().BaseElement);
+
+            // Dateline can be Text, hCard, Adr, Geo or Date
+            // Looks for the highest resolution frist
+            // --------------
+
+            UfFormatDescriber datelinehCard = HCard();
+            datelinehCard.BaseElement.CompoundName = "dateline";
+            datelinehCard.BaseElement.CompoundAttribute = "class";
+            datelinehCard.BaseElement.ConcatenateValues = false;
+            uFormat.BaseElement.Elements.Add(datelinehCard.BaseElement);
+
+            UfFormatDescriber datelineAdr = Adr();
+            datelineAdr.BaseElement.CompoundName = "dateline";
+            datelineAdr.BaseElement.CompoundAttribute = "class";
+            datelineAdr.BaseElement.ConcatenateValues = false;
+            uFormat.BaseElement.Elements.Add(datelineAdr.BaseElement);
+
+            UfFormatDescriber datelineGeo = Geo();
+            datelineGeo.BaseElement.CompoundName = "dateline";
+            datelineGeo.BaseElement.CompoundAttribute = "class";
+            datelineGeo.BaseElement.ConcatenateValues = false;
+            uFormat.BaseElement.Elements.Add(datelineGeo.BaseElement);
+
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("dateline", false, false, false, UfElementDescriber.PropertyTypes.Date));
+
+            // --------------
+
+
+            uFormat.BaseElement.Elements.Add(hNewsLicenseItem().BaseElement);
+
+
+            return uFormat;
+        }
+
+
+        public static UfFormatDescriber hNewsLicenseItem()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "item";
+            uFormat.Description = "Used in a hNews hEntry";
+            uFormat.Type = UfFormatDescriber.FormatTypes.Compound;
+            uFormat.BaseElement = new UfElementDescriber("item", true, true, UfElementDescriber.PropertyTypes.None);
+
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("item-url", true, false, UfElementDescriber.PropertyTypes.FormattedText));
+            uFormat.BaseElement.Elements.Add(ItemLicense().BaseElement);
+
+            UfFormatDescriber attribution = HCard();
+            attribution.BaseElement.CompoundName = "attribution";
+            attribution.BaseElement.CompoundAttribute = "class";
+            attribution.BaseElement.Multiples = true;
+            uFormat.BaseElement.Elements.Add(attribution.BaseElement);
+
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("attribution", true, false, UfElementDescriber.PropertyTypes.UrlText));
+
+            return uFormat;
+        }
+
+
 
         public static UfFormatDescriber HResume()
         {
@@ -321,9 +422,66 @@ namespace UfXtract
             con.BaseElement.Multiples = false;
             uFormat.BaseElement.Elements.Add(con.BaseElement);
 
+            // Part of draft spec, used on Linked-in
+            // http://microformats.org/wiki/hresume-skill-brainstorm
+            UfFormatDescriber comp = Competency();
+            comp.BaseElement.Multiples = true;
+            uFormat.BaseElement.Elements.Add(comp.BaseElement);
+
             return uFormat;
         }
 
+
+
+        public static UfFormatDescriber HRecipe()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "hrecipe";
+            uFormat.Description = "A recipe";
+            uFormat.Type = UfFormatDescriber.FormatTypes.Compound;
+            uFormat.BaseElement = new UfElementDescriber("hrecipe", true, true, UfElementDescriber.PropertyTypes.None);
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("fn", true, false, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("ingredient", false, true, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("yield", false, false, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("instructions", false, false, UfElementDescriber.PropertyTypes.FormattedText));
+            //NOTE: Added 'directions' for AllRecipes, even though hRecipe spec says instructions
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("directions", false, false, UfElementDescriber.PropertyTypes.FormattedText)); 
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("duration", false, true, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("photo", false, true, UfElementDescriber.PropertyTypes.Image));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("summary", false, false, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("author", false, true, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("published", false, true, UfElementDescriber.PropertyTypes.Date));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("nutrition", false, true, UfElementDescriber.PropertyTypes.Date));
+
+            uFormat.BaseElement.Elements.Add(Tag().BaseElement);
+            return uFormat;
+        }
+
+
+        // This currently not used because of issue with type/value
+        public static UfFormatDescriber Ingredient()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "Ingredient";
+            uFormat.Description = "An ingredient";
+            uFormat.BaseElement = new UfElementDescriber("ingredient", true, true, UfElementDescriber.PropertyTypes.None);
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("value", false, false, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("type", false, false, UfElementDescriber.PropertyTypes.Text));
+            return uFormat;
+        }
+
+
+        // This currently not used because of issue with type/value
+        public static UfFormatDescriber Nutrition()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "Nutrition";
+            uFormat.Description = "An nutrition";
+            uFormat.BaseElement = new UfElementDescriber("nutrition", true, false, UfElementDescriber.PropertyTypes.None);
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("value", false, false, UfElementDescriber.PropertyTypes.Text));
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("type", false, false, UfElementDescriber.PropertyTypes.Text));
+            return uFormat;
+        }
 
         #endregion
 
@@ -409,6 +567,43 @@ namespace UfXtract
             uFElement.Type = UfElementDescriber.PropertyTypes.UrlText;
             uFormat.BaseElement = uFElement;
             uFElement.AttributeValues.Add(new UfAttributeValueDescriber("license"));
+            return uFormat;
+        }
+
+
+        public static UfFormatDescriber ItemLicense()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "item-license";
+            uFormat.Description = "item-license used in hNews hEntry item";
+            uFormat.Type = UfFormatDescriber.FormatTypes.Elemental;
+
+            UfElementDescriber uFElement = new UfElementDescriber();
+            uFElement.Name = "item-license";
+            uFElement.AllowedTags.Add("a");
+            uFElement.AllowedTags.Add("link");
+            uFElement.Attribute = "rel";
+            uFElement.Type = UfElementDescriber.PropertyTypes.UrlText;
+            uFormat.BaseElement = uFElement;
+            uFElement.AttributeValues.Add(new UfAttributeValueDescriber("item-license"));
+            return uFormat;
+        }
+
+        public static UfFormatDescriber Principles()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "principles";
+            uFormat.Description = "Principles";
+            uFormat.Type = UfFormatDescriber.FormatTypes.Elemental;
+
+            UfElementDescriber uFElement = new UfElementDescriber();
+            uFElement.Name = "principles";
+            uFElement.AllowedTags.Add("a");
+            uFElement.AllowedTags.Add("link");
+            uFElement.Attribute = "rel";
+            uFElement.Type = UfElementDescriber.PropertyTypes.UrlText;
+            uFormat.BaseElement = uFElement;
+            uFElement.AttributeValues.Add(new UfAttributeValueDescriber("principles"));
             return uFormat;
         }
 
@@ -581,6 +776,22 @@ namespace UfXtract
 
         #region "Reusabe patterns"
         //-----------------------------------------------------------------------
+
+        public static UfFormatDescriber Competency()
+        {
+            UfFormatDescriber uFormat = new UfFormatDescriber();
+            uFormat.Name = "competency";
+            uFormat.Description = "Part of draft hResume spec";
+            uFormat.BaseElement = new UfElementDescriber("competency", false, false, UfElementDescriber.PropertyTypes.None);
+            
+            UfFormatDescriber ski = Tag();
+            ski.BaseElement.CompoundName = "skill";
+            ski.BaseElement.CompoundAttribute = "class";
+            uFormat.BaseElement.Elements.Add(ski.BaseElement);
+
+            uFormat.BaseElement.Elements.Add(new UfElementDescriber("proficiency", false, false, UfElementDescriber.PropertyTypes.Text));
+            return uFormat;
+        }
 
         public static UfFormatDescriber Org()
         {

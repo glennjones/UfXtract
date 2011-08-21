@@ -17,6 +17,8 @@ namespace UfXtractUnitTestBuilder
             loader.ParseTestSuite("http://www.ufxtract.com/testsuite/hcard/");
             loader.ParseTestSuite("http://www.ufxtract.com/testsuite/hcalendar/");
             loader.ParseTestSuite("http://www.ufxtract.com/testsuite/hresume/");
+            loader.ParseTestSuite("http://www.ufxtract.com/testsuite/hrecipe/");
+            loader.ParseTestSuite("http://www.ufxtract.com/testsuite/geo/");
 
             loader.LoadTestFixture("http://microformats.org/wiki/value-dt-test-YYYY-MM-DD--HH-MM");
             loader.LoadTestFixture("http://microformats.org/wiki/value-dt-test-abbr-YYYY-MM-DD--HH-MM");

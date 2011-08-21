@@ -1,32 +1,725 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\Project.nunit" total="10" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-08-14" time="15:21:52">
-  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.3615" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.2\bin\net-2.0" machine-name="GLENNJONES" user="gjones" user-domain="CLARENCE" />
+<test-results name="C:\Projects\UfXtract\UfXtractUnitTests\Project.nunit" total="362" errors="3" failures="4" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-08-21" time="13:23:22">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.4961" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.7\bin\net-2.0" machine-name="GLENNJONES-PC" user="glennjones" user-domain="glennjones-pc" />
   <culture-info current-culture="en-GB" current-uiculture="en-US" />
-  <test-suite name="C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\Project.nunit" executed="True" success="True" time="1.829" asserts="0">
+  <test-suite type="Project" name="C:\Projects\UfXtract\UfXtractUnitTests\Project.nunit" executed="True" result="Failure" success="False" time="69.297" asserts="0">
     <results>
-      <test-suite name="C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\bin\Debug\UfXtractUnitTests.dll" executed="True" success="True" time="1.813" asserts="0">
+      <test-suite type="Assembly" name="C:\Projects\UfXtract\UfXtractUnitTests\bin\Debug\UfXtractUnitTests.dll" executed="True" result="Failure" success="False" time="69.208" asserts="0">
         <results>
-          <test-suite name="UfXtract" executed="True" success="True" time="1.782" asserts="0">
+          <test-suite type="Namespace" name="UfXtract" executed="True" result="Failure" success="False" time="69.207" asserts="0">
             <results>
-              <test-suite name="UnitTests" executed="True" success="True" time="1.782" asserts="0">
+              <test-suite type="Namespace" name="UnitTests" executed="True" result="Failure" success="False" time="69.207" asserts="0">
                 <results>
-                  <test-suite name="hCard" executed="True" success="True" time="1.782" asserts="0">
+                  <test-suite type="Namespace" name="geo" executed="True" result="Success" success="True" time="1.308" asserts="0">
                     <results>
-                      <test-suite name="test_hCard_22" executed="True" success="True" time="1.782" asserts="0">
+                      <test-suite type="TestFixture" name="test_geo_1" executed="True" result="Success" success="True" time="1.300" asserts="0">
                         <results>
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_01" executed="True" success="True" time="0.969" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_02" executed="True" success="True" time="0.063" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_03" executed="True" success="True" time="0.125" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_04" executed="True" success="True" time="0.078" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_05" executed="True" success="True" time="0.078" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_06" executed="True" success="True" time="0.094" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_07" executed="True" success="True" time="0.078" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_08" executed="True" success="True" time="0.125" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_09" executed="True" success="True" time="0.078" asserts="1" />
-                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_10" executed="True" success="True" time="0.078" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.geo.test_geo_1.Test_01" executed="True" result="Success" success="True" time="1.208" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.geo.test_geo_1.Test_02" executed="True" result="Success" success="True" time="0.072" asserts="1" />
                         </results>
                       </test-suite>
+                      <test-suite type="TestFixture" name="test_geo_2" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="hCalendar" executed="True" result="Success" success="True" time="50.350" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="test_hCalendar_1" executed="True" result="Success" success="True" time="1.122" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_01" executed="True" result="Success" success="True" time="0.133" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_02" executed="True" result="Success" success="True" time="0.103" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_03" executed="True" result="Success" success="True" time="0.091" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_04" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_05" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_06" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_07" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_08" executed="True" result="Success" success="True" time="0.053" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_09" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_10" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_11" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_12" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_13" executed="True" result="Success" success="True" time="0.059" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_14" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_1.Test_15" executed="True" result="Success" success="True" time="0.059" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_10" executed="True" result="Success" success="True" time="1.411" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_01" executed="True" result="Success" success="True" time="0.121" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_02" executed="True" result="Success" success="True" time="0.067" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_03" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_04" executed="True" result="Success" success="True" time="0.091" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_05" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_06" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_07" executed="True" result="Success" success="True" time="0.125" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_08" executed="True" result="Success" success="True" time="0.088" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_09" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_10" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_11" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_12" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_13" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_14" executed="True" result="Success" success="True" time="0.111" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_15" executed="True" result="Success" success="True" time="0.067" asserts="0" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_10.Test_16" executed="True" result="Success" success="True" time="0.079" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_11" executed="True" result="Success" success="True" time="0.264" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_11.Test_01" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_11.Test_02" executed="True" result="Success" success="True" time="0.106" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_11.Test_03" executed="True" result="Success" success="True" time="0.098" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_12" executed="True" result="Success" success="True" time="0.765" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_12.Test_01" executed="True" result="Success" success="True" time="0.216" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_12.Test_02" executed="True" result="Success" success="True" time="0.176" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_12.Test_03" executed="True" result="Success" success="True" time="0.196" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_12.Test_04" executed="True" result="Success" success="True" time="0.170" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_13" executed="True" result="Success" success="True" time="0.363" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_13.Test_01" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_13.Test_02" executed="True" result="Success" success="True" time="0.096" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_13.Test_03" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_13.Test_04" executed="True" result="Success" success="True" time="0.075" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_14" executed="True" result="Success" success="True" time="1.137" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_01" executed="True" result="Success" success="True" time="0.070" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_02" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_03" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_04" executed="True" result="Success" success="True" time="0.109" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_05" executed="True" result="Success" success="True" time="0.076" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_06" executed="True" result="Success" success="True" time="0.085" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_07" executed="True" result="Success" success="True" time="0.096" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_08" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_09" executed="True" result="Success" success="True" time="0.100" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_10" executed="True" result="Success" success="True" time="0.106" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_11" executed="True" result="Success" success="True" time="0.080" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_12" executed="True" result="Success" success="True" time="0.087" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_14.Test_13" executed="True" result="Success" success="True" time="0.085" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_2" executed="True" result="Success" success="True" time="0.214" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_2.Test_01" executed="True" result="Success" success="True" time="0.072" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_2.Test_02" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_2.Test_03" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_3" executed="True" result="Success" success="True" time="1.045" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_01" executed="True" result="Success" success="True" time="0.087" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_02" executed="True" result="Success" success="True" time="0.085" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_03" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_04" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_05" executed="True" result="Success" success="True" time="0.076" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_06" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_07" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_08" executed="True" result="Success" success="True" time="0.117" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_09" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_10" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_11" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_3.Test_12" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_4" executed="True" result="Success" success="True" time="0.571" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_4.Test_01" executed="True" result="Success" success="True" time="0.115" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_4.Test_02" executed="True" result="Success" success="True" time="0.084" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_4.Test_03" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_4.Test_04" executed="True" result="Success" success="True" time="0.125" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_4.Test_05" executed="True" result="Success" success="True" time="0.109" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_4.Test_06" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_5" executed="True" result="Success" success="True" time="0.135" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_5.Test_01" executed="True" result="Success" success="True" time="0.062" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_5.Test_02" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_6" executed="True" result="Success" success="True" time="0.840" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_01" executed="True" result="Success" success="True" time="0.088" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_02" executed="True" result="Success" success="True" time="0.110" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_03" executed="True" result="Success" success="True" time="0.097" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_04" executed="True" result="Success" success="True" time="0.093" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_05" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_06" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_07" executed="True" result="Success" success="True" time="0.117" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_08" executed="True" result="Success" success="True" time="0.085" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_6.Test_09" executed="True" result="Success" success="True" time="0.084" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_7" executed="True" result="Success" success="True" time="0.599" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_01" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_02" executed="True" result="Success" success="True" time="0.095" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_03" executed="True" result="Success" success="True" time="0.059" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_04" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_05" executed="True" result="Success" success="True" time="0.070" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_06" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_07" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_7.Test_08" executed="True" result="Success" success="True" time="0.061" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_8" executed="True" result="Success" success="True" time="0.142" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_8.Test_01" executed="True" result="Success" success="True" time="0.086" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_8.Test_02" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCalendar_9" executed="True" result="Success" success="True" time="1.602" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_01" executed="True" result="Success" success="True" time="0.117" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_02" executed="True" result="Success" success="True" time="0.110" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_03" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_04" executed="True" result="Success" success="True" time="0.088" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_05" executed="True" result="Success" success="True" time="0.113" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_06" executed="True" result="Success" success="True" time="0.091" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_07" executed="True" result="Success" success="True" time="0.139" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_08" executed="True" result="Success" success="True" time="0.121" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_09" executed="True" result="Success" success="True" time="0.125" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_10" executed="True" result="Success" success="True" time="0.120" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_11" executed="True" result="Success" success="True" time="0.093" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_12" executed="True" result="Success" success="True" time="0.120" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_13" executed="True" result="Success" success="True" time="0.131" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_hCalendar_9.Test_14" executed="True" result="Success" success="True" time="0.126" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_abbr_YYYY_MM_DD__HH_MM" executed="True" result="Success" success="True" time="1.371" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_abbr_YYYY_MM_DD__HH_MM.Test_01" executed="True" result="Success" success="True" time="1.371" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_abbr_YYYY_MM_DD_abbr_HH_MM" executed="True" result="Success" success="True" time="1.331" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_abbr_YYYY_MM_DD_abbr_HH_MM.Test_01" executed="True" result="Success" success="True" time="1.331" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_DDD__HH_MM_SS" executed="True" result="Success" success="True" time="1.212" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_DDD__HH_MM_SS.Test_01" executed="True" result="Success" success="True" time="1.211" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__0Ham_EEam" executed="True" result="Success" success="True" time="3.198" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__0Ham_EEam.Test_01" executed="True" result="Success" success="True" time="1.515" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__0Ham_EEam.Test_02" executed="True" result="Success" success="True" time="1.682" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__12am_12pm" executed="True" result="Success" success="True" time="2.887" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__12am_12pm.Test_01" executed="True" result="Success" success="True" time="1.336" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__12am_12pm.Test_02" executed="True" result="Success" success="True" time="1.549" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__abbr_HH_MMpm" executed="True" result="Success" success="True" time="2.878" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__abbr_HH_MMpm.Test_01" executed="True" result="Success" success="True" time="1.336" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__abbr_HH_MMpm.Test_02" executed="True" result="Success" success="True" time="1.541" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__H_MM_SSpm_EE_NN_UUpm" executed="True" result="Success" success="True" time="2.585" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__H_MM_SSpm_EE_NN_UUpm.Test_01" executed="True" result="Success" success="True" time="1.281" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__H_MM_SSpm_EE_NN_UUpm.Test_02" executed="True" result="Success" success="True" time="1.302" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__H_MMam_Epm" executed="True" result="Success" success="True" time="3.101" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__H_MMam_Epm.Test_01" executed="True" result="Success" success="True" time="1.591" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__H_MMam_Epm.Test_02" executed="True" result="Success" success="True" time="1.505" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__HH_MM" executed="True" result="Success" success="True" time="2.970" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MM.Test_01" executed="True" result="Success" success="True" time="1.566" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MM.Test_02" executed="True" result="Success" success="True" time="1.403" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__HH_MM_XX__EE_NN_UU__Y" executed="True" result="Success" success="True" time="3.120" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MM_XX__EE_NN_UU__Y.Test_01" executed="True" result="Success" success="True" time="1.662" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MM_XX__EE_NN_UU__Y.Test_02" executed="True" result="Success" success="True" time="1.455" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__HH_MM_XX_YY__EE_NN_UU__XXYY" executed="True" result="Success" success="True" time="3.097" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MM_XX_YY__EE_NN_UU__XXYY.Test_01" executed="True" result="Success" success="True" time="1.583" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MM_XX_YY__EE_NN_UU__XXYY.Test_02" executed="True" result="Success" success="True" time="1.513" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__HH_MMZ_EE_NN_UUZ" executed="True" result="Success" success="True" time="3.027" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MMZ_EE_NN_UUZ.Test_01" executed="True" result="Success" success="True" time="1.501" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HH_MMZ_EE_NN_UUZ.Test_02" executed="True" result="Success" success="True" time="1.525" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__HHpm" executed="True" result="Success" success="True" time="3.063" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HHpm.Test_01" executed="True" result="Success" success="True" time="1.535" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__HHpm.Test_02" executed="True" result="Success" success="True" time="1.526" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_value_dt_test_YYYY_MM_DD__Hpm_EEpm" executed="True" result="Success" success="True" time="3.112" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__Hpm_EEpm.Test_01" executed="True" result="Success" success="True" time="1.577" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_value_dt_test_YYYY_MM_DD__Hpm_EEpm.Test_02" executed="True" result="Success" success="True" time="1.532" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_YYYY_MM_DD__HH_MM_SS_XXYY__EE_NN__Z" executed="True" result="Success" success="True" time="3.066" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_YYYY_MM_DD__HH_MM_SS_XXYY__EE_NN__Z.Test_01" executed="True" result="Success" success="True" time="1.473" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCalendar.test_YYYY_MM_DD__HH_MM_SS_XXYY__EE_NN__Z.Test_02" executed="True" result="Success" success="True" time="1.592" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="hCard" executed="True" result="Failure" success="False" time="12.595" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="test_hCard_1" executed="True" result="Success" success="True" time="0.703" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_01" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_02" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_03" executed="True" result="Success" success="True" time="0.059" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_04" executed="True" result="Success" success="True" time="0.095" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_05" executed="True" result="Success" success="True" time="0.051" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_06" executed="True" result="Success" success="True" time="0.091" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_07" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_08" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_09" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_1.Test_10" executed="True" result="Success" success="True" time="0.055" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_10" executed="True" result="Success" success="True" time="1.344" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_01" executed="True" result="Success" success="True" time="0.117" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_02" executed="True" result="Success" success="True" time="0.105" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_03" executed="True" result="Success" success="True" time="0.105" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_04" executed="True" result="Success" success="True" time="0.086" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_05" executed="True" result="Success" success="True" time="0.093" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_06" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_07" executed="True" result="Success" success="True" time="0.093" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_08" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_09" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_10" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_11" executed="True" result="Success" success="True" time="0.108" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_12" executed="True" result="Success" success="True" time="0.098" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_13" executed="True" result="Success" success="True" time="0.111" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_10.Test_14" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_11" executed="True" result="Success" success="True" time="0.179" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_11.Test_01" executed="True" result="Success" success="True" time="0.058" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_11.Test_02" executed="True" result="Success" success="True" time="0.061" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_11.Test_03" executed="True" result="Success" success="True" time="0.055" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_12" executed="True" result="Success" success="True" time="0.587" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_01" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_02" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_03" executed="True" result="Success" success="True" time="0.098" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_04" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_05" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_06" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_07" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_12.Test_08" executed="True" result="Success" success="True" time="0.063" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_13" executed="True" result="Success" success="True" time="0.118" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_13.Test_01" executed="True" result="Success" success="True" time="0.067" asserts="0" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_13.Test_02" executed="True" result="Success" success="True" time="0.050" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_14" executed="True" result="Success" success="True" time="0.139" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_14.Test_01" executed="True" result="Success" success="True" time="0.094" asserts="0" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_14.Test_02" executed="True" result="Success" success="True" time="0.043" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_15" executed="True" result="Success" success="True" time="0.658" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_01" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_02" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_03" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_04" executed="True" result="Success" success="True" time="0.061" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_05" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_06" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_07" executed="True" result="Success" success="True" time="0.106" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_08" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_15.Test_09" executed="True" result="Success" success="True" time="0.079" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_16" executed="True" result="Success" success="True" time="0.596" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_01" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_02" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_03" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_04" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_05" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_06" executed="True" result="Success" success="True" time="0.072" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_07" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_16.Test_08" executed="True" result="Success" success="True" time="0.097" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_17" executed="True" result="Success" success="True" time="0.821" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_01" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_02" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_03" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_04" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_05" executed="True" result="Success" success="True" time="0.085" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_06" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_07" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_08" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_09" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_17.Test_10" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_18" executed="True" result="Success" success="True" time="0.243" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_01" executed="True" result="Success" success="True" time="0.048" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_02" executed="True" result="Success" success="True" time="0.048" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_03" executed="True" result="Success" success="True" time="0.072" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_18.Test_04" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_19" executed="True" result="Success" success="True" time="0.194" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_19.Test_01" executed="True" result="Success" success="True" time="0.125" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_19.Test_02" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_2" executed="True" result="Failure" success="False" time="1.577" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_01" executed="True" result="Success" success="True" time="0.088" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_02" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_03" executed="True" result="Success" success="True" time="0.115" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_04" executed="True" result="Success" success="True" time="0.123" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_05" executed="True" result="Success" success="True" time="0.101" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_06" executed="True" result="Success" success="True" time="0.096" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_07" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_08" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_09" executed="True" result="Error" success="False" time="0.096" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.ArgumentException : Out of range]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UfDataNodes.get_Item(Int32 index) in C:\Projects\UfXtract\ufXtract\UfDataNodes.cs:line 175
+at UfXtract.UfDataNodes.GetNameByPosition(String name, Int32 pos) in C:\Projects\UfXtract\ufXtract\UfDataNodes.cs:line 56
+at UfXtract.UnitTests.hCard.test_hCard_2.Test_09() in C:\Projects\UfXtract\ufXtractUnitTests\test_hCard_2.cs:line 143
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_10" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_11" executed="True" result="Success" success="True" time="0.105" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_12" executed="True" result="Success" success="True" time="0.110" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_13" executed="True" result="Success" success="True" time="0.084" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_14" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_15" executed="True" result="Success" success="True" time="0.117" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_2.Test_16" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_20" executed="True" result="Success" success="True" time="0.217" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_20.Test_01" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_20.Test_02" executed="True" result="Success" success="True" time="0.067" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_20.Test_03" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_21" executed="True" result="Success" success="True" time="0.479" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_01" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_02" executed="True" result="Success" success="True" time="0.104" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_03" executed="True" result="Success" success="True" time="0.099" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_04" executed="True" result="Success" success="True" time="0.057" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_05" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_21.Test_06" executed="True" result="Success" success="True" time="0.071" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_22" executed="True" result="Success" success="True" time="0.830" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_01" executed="True" result="Success" success="True" time="0.095" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_02" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_03" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_04" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_05" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_06" executed="True" result="Success" success="True" time="0.061" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_07" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_08" executed="True" result="Success" success="True" time="0.108" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_09" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_22.Test_10" executed="True" result="Success" success="True" time="0.120" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_3" executed="True" result="Success" success="True" time="0.498" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_01" executed="True" result="Success" success="True" time="0.050" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_02" executed="True" result="Success" success="True" time="0.062" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_03" executed="True" result="Success" success="True" time="0.075" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_04" executed="True" result="Success" success="True" time="0.075" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_05" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_06" executed="True" result="Success" success="True" time="0.066" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_07" executed="True" result="Success" success="True" time="0.055" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_3.Test_08" executed="True" result="Success" success="True" time="0.048" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_4" executed="True" result="Success" success="True" time="0.386" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_01" executed="True" result="Success" success="True" time="0.054" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_02" executed="True" result="Success" success="True" time="0.150" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_03" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_04" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_4.Test_05" executed="True" result="Success" success="True" time="0.050" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_5" executed="True" result="Success" success="True" time="0.175" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_5.Test_01" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_5.Test_02" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_5.Test_03" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_6" executed="True" result="Failure" success="False" time="0.534" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_01" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_02" executed="True" result="Failure" success="False" time="0.091" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Where a type is specified, but the value is not then the node text is the value
+  Expected string length 16 but was 19. Strings differ at index 0.
+  Expected: "john@example.com"
+  But was:  "notthis@example.com"
+  -----------^
+]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_6.Test_02() in C:\Projects\UfXtract\ufXtractUnitTests\test_hCard_6.cs:line 49
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_03" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_04" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_05" executed="True" result="Failure" success="False" time="0.063" asserts="1">
+                            <failure>
+                              <message><![CDATA[  The thrid type value "lotus-notes" is incorrect
+  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_6.Test_05() in C:\Projects\UfXtract\ufXtractUnitTests\test_hCard_6.cs:line 84
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_06" executed="True" result="Success" success="True" time="0.076" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_6.Test_07" executed="True" result="Success" success="True" time="0.062" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_7" executed="True" result="Failure" success="False" time="0.420" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_01" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_02" executed="True" result="Success" success="True" time="0.067" asserts="0" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_03" executed="True" result="Success" success="True" time="0.099" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_04" executed="True" result="Failure" success="False" time="0.092" asserts="1">
+                            <failure>
+                              <message><![CDATA[  The second type value "next-door" is incorrect
+  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UnitTests.hCard.test_hCard_7.Test_04() in C:\Projects\UfXtract\ufXtractUnitTests\test_hCard_7.cs:line 73
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_7.Test_05" executed="True" result="Success" success="True" time="0.078" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_8" executed="True" result="Success" success="True" time="0.159" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_8.Test_01" executed="True" result="Success" success="True" time="0.057" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_8.Test_02" executed="True" result="Success" success="True" time="0.044" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_8.Test_03" executed="True" result="Success" success="True" time="0.055" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_9" executed="True" result="Success" success="True" time="0.147" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_9.Test_01" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_9.Test_02" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hCard_99" executed="True" result="Success" success="True" time="1.424" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_01" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_02" executed="True" result="Success" success="True" time="0.110" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_03" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_04" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_05" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_06" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_07" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_08" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_09" executed="True" result="Success" success="True" time="0.077" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_10" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_11" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_12" executed="True" result="Success" success="True" time="0.067" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_13" executed="True" result="Success" success="True" time="0.084" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_14" executed="True" result="Success" success="True" time="0.089" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_15" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_16" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_17" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hCard.test_hCard_99.Test_18" executed="True" result="Success" success="True" time="0.079" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="hRecipe" executed="True" result="Failure" success="False" time="0.749" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="test_hRecipe_1" executed="True" result="Success" success="True" time="0.228" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_1.Test_01" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_1.Test_02" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_1.Test_03" executed="True" result="Success" success="True" time="0.043" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_1.Test_04" executed="True" result="Success" success="True" time="0.049" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hRecipe_2" executed="True" result="Success" success="True" time="0.391" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_2.Test_01" executed="True" result="Success" success="True" time="0.060" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_2.Test_02" executed="True" result="Success" success="True" time="0.049" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_2.Test_03" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_2.Test_04" executed="True" result="Success" success="True" time="0.041" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_2.Test_05" executed="True" result="Success" success="True" time="0.055" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_2.Test_06" executed="True" result="Success" success="True" time="0.090" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hRecipe_3" executed="True" result="Failure" success="False" time="0.120" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_3.Test_01" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UnitTests.hRecipe.test_hRecipe_3.Test_01() in C:\Projects\UfXtract\ufXtractUnitTests\test_hRecipe_3.cs:line 39
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="UfXtract.UnitTests.hRecipe.test_hRecipe_3.Test_02" executed="True" result="Error" success="False" time="0.056" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UnitTests.hRecipe.test_hRecipe_3.Test_02() in C:\Projects\UfXtract\ufXtractUnitTests\test_hRecipe_3.cs:line 48
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="hResume" executed="True" result="Failure" success="False" time="4.051" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="test_hResume_1" executed="True" result="Success" success="True" time="0.214" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_1.Test_01" executed="True" result="Success" success="True" time="0.079" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_1.Test_02" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_1.Test_03" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hResume_2" executed="True" result="Failure" success="False" time="0.605" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_01" executed="True" result="Success" success="True" time="0.096" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_02" executed="True" result="Success" success="True" time="0.098" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_03" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_04" executed="True" result="Success" success="True" time="0.073" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_05" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_06" executed="True" result="Failure" success="False" time="0.082" asserts="1">
+                            <failure>
+                              <message><![CDATA[  The publication is a multiple occurrence value
+  Expected string length 20 but was 0. Strings differ at index 0.
+  Expected: "http://2.example.com"
+  But was:  <string.Empty>
+  -----------^
+]]></message>
+                              <stack-trace><![CDATA[at UfXtract.UnitTests.hResume.test_hResume_2.Test_06() in C:\Projects\UfXtract\ufXtractUnitTests\test_hResume_2.cs:line 85
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_2.Test_07" executed="True" result="Success" success="True" time="0.092" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hResume_3" executed="True" result="Success" success="True" time="1.458" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_01" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_02" executed="True" result="Success" success="True" time="0.096" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_03" executed="True" result="Success" success="True" time="0.102" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_04" executed="True" result="Success" success="True" time="0.098" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_05" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_06" executed="True" result="Success" success="True" time="0.126" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_07" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_08" executed="True" result="Success" success="True" time="0.095" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_09" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_10" executed="True" result="Success" success="True" time="0.067" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_11" executed="True" result="Success" success="True" time="0.106" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_12" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_13" executed="True" result="Success" success="True" time="0.082" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_14" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_15" executed="True" result="Success" success="True" time="0.079" asserts="0" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_3.Test_16" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hResume_4" executed="True" result="Success" success="True" time="0.471" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_4.Test_01" executed="True" result="Success" success="True" time="0.079" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_4.Test_02" executed="True" result="Success" success="True" time="0.110" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_4.Test_03" executed="True" result="Success" success="True" time="0.076" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_4.Test_04" executed="True" result="Success" success="True" time="0.054" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_4.Test_05" executed="True" result="Success" success="True" time="0.068" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_4.Test_06" executed="True" result="Success" success="True" time="0.075" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hResume_6" executed="True" result="Success" success="True" time="0.786" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_01" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_02" executed="True" result="Success" success="True" time="0.080" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_03" executed="True" result="Success" success="True" time="0.070" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_04" executed="True" result="Success" success="True" time="0.063" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_05" executed="True" result="Success" success="True" time="0.112" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_06" executed="True" result="Success" success="True" time="0.128" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_07" executed="True" result="Success" success="True" time="0.091" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_08" executed="True" result="Success" success="True" time="0.080" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_6.Test_09" executed="True" result="Success" success="True" time="0.076" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="test_hResume_7" executed="True" result="Success" success="True" time="0.498" asserts="0">
+                        <results>
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_7.Test_01" executed="True" result="Success" success="True" time="0.065" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_7.Test_02" executed="True" result="Success" success="True" time="0.093" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_7.Test_03" executed="True" result="Success" success="True" time="0.052" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_7.Test_04" executed="True" result="Success" success="True" time="0.046" asserts="1" />
+                          <test-case name="UfXtract.UnitTests.hResume.test_hResume_7.Test_05" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="test_ISODateTime" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.test_ISODateTime.Test_ISODateTime" executed="True" result="Success" success="True" time="0.009" asserts="16" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="test_ISODurations" executed="True" result="Success" success="True" time="0.019" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.test_ISODurations.Test_ISODurations" executed="True" result="Success" success="True" time="0.016" asserts="16" />
+                      <test-case name="UfXtract.UnitTests.test_ISODurations.Test_ISODurationsAddToDate" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="test_PhoneNumber" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.test_PhoneNumber.Test_PhoneNumber" executed="True" result="Success" success="True" time="0.008" asserts="8" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="test_RFC3389" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.test_RFC3389.Test_RFC3389" executed="True" result="Success" success="True" time="0.002" asserts="16" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="test_W3CNote" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                    <results>
+                      <test-case name="UfXtract.UnitTests.test_W3CNote.Test_W3CNote" executed="True" result="Success" success="True" time="0.004" asserts="13" />
                     </results>
                   </test-suite>
                 </results>

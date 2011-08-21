@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1000]C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\Project.nunit</TopNode>
-  <SelectedNode>[0-1000]C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\Project.nunit</SelectedNode>
+  <TopNode>[0-1000]C:\Projects\UfXtract\UfXtractUnitTests\Project.nunit</TopNode>
+  <SelectedNode>[0-1000]C:\Projects\UfXtract\UfXtractUnitTests\Project.nunit</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1000]C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\Project.nunit" Expanded="true" />
-    <Node UniqueName="[0-1389]C:\Documents and Settings\gjones\UfXtract\UfXtractUnitTests\bin\Debug\UfXtractUnitTests.dll" Expanded="true" />
-    <Node UniqueName="[0-1390]UfXtract" Expanded="true" />
-    <Node UniqueName="[0-1391]UfXtract.UnitTests" Expanded="true" />
-    <Node UniqueName="[0-1394]UfXtract.UnitTests.hCalendar" Expanded="true" />
+    <Node UniqueName="[0-1000]C:\Projects\UfXtract\UfXtractUnitTests\Project.nunit" Expanded="true" />
+    <Node UniqueName="[0-1431]C:\Projects\UfXtract\UfXtractUnitTests\bin\Debug\UfXtractUnitTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1432]UfXtract" Expanded="true" />
+    <Node UniqueName="[0-1433]UfXtract.UnitTests" Expanded="true" />
+    <Node UniqueName="[0-1428]UfXtract.UnitTests.geo.test_geo_1" Expanded="true" />
+    <Node UniqueName="[0-1427]UfXtract.UnitTests.geo.test_geo_2" Expanded="true" />
+    <Node UniqueName="[0-1434]UfXtract.UnitTests.hCard" Expanded="true" />
+    <Node UniqueName="[0-1437]UfXtract.UnitTests.hRecipe" Expanded="true" />
+    <Node UniqueName="[0-1412]UfXtract.UnitTests.hRecipe.test_hRecipe_1" Expanded="true" />
+    <Node UniqueName="[0-1420]UfXtract.UnitTests.hRecipe.test_hRecipe_2" Expanded="true" />
+    <Node UniqueName="[0-1417]UfXtract.UnitTests.hRecipe.test_hRecipe_3" Expanded="true" />
+    <Node UniqueName="[0-1436]UfXtract.UnitTests.hResume" Expanded="true" />
+    <Node UniqueName="[0-1164]UfXtract.UnitTests.hResume.test_hResume_2" Expanded="true" />
+    <Node UniqueName="[0-1037]UfXtract.UnitTests.hResume.test_hResume_7" Expanded="true" />
   </Nodes>
 </VisualState>

@@ -248,8 +248,10 @@ namespace UfXtract
 
         private void AddChildNodes(UfDataNode xNode, UfDataNode node, UfElementDescriber ufElement)
         {
-            if (!string.IsNullOrEmpty(node.ElementId))
-                xNode.Nodes.Add("id", node.ElementId);
+            //if (!string.IsNullOrEmpty(node.ElementId))
+            //{
+            //    xNode.Nodes.Add("id", node.ElementId);
+            //}
             
 
             if (ufElement.AttributeValues.Count > 0)

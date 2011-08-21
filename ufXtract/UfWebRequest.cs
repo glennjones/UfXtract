@@ -59,7 +59,7 @@ namespace UfXtract
                         DateTime started = DateTime.Now;
 
                         if (webPage.StatusCode == 200 && webPage.Html != null)
-                            ParseUf(webPage.Html, webPage.Url, formatDescriber, false, urlReport);
+                            ParseUf(webPage.Html, url, formatDescriber, false, urlReport);
 
                         if (webPage.StatusCode != 200)
                             throw (new Exception("Could not load url: " + url + " " + webPage.StatusCode));
